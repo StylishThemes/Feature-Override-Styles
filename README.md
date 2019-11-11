@@ -30,6 +30,9 @@ Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://add
 
 📦 [Install the GitHub Dark Diff Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css) [Is a color-blind friendly GitHub Dark's diff colors style](https://github.com/StylishThemes/GitHub-Dark/issues/1006), this is a companion script for  [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) style.<br>
 >Note: Not to be used on its own without the GitHub Dark style also installed ;)
+
+📦 [Install the GitHub Dark Calendar Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css) is a [color-blind friendly GitHub Dark's diff colors style](https://github.com/StylishThemes/GitHub-Dark/issues/1002), this is a companion script for  [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) style.<br>
+>Note: Not to be used on its own without the GitHub Dark style also installed ;)
 <br>
 
 ## Contributions

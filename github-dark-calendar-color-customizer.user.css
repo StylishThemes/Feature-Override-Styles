@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name         GitHub Dark Calendar Color Customizer
+@namespace    StylishThemes
+@version      0.0.4
+@description  A GitHub Dark calendar color customization style
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-calendar-color-customizer.user.css
+@license      CC-BY-SA-4.0
+
+@var color base-color "Base color" #7bc96f
+@var text  brightness "Brightness" 100%
+
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document regexp("^https?://((gist|guides|help|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
+  /* contribution calendar */
+  body .calendar-graph rect[fill="#c6e48b"],
+  body .calendar-graph rect[fill="#7bc96f"],
+  body .calendar-graph rect[fill="#239a3b"],
+  body .calendar-graph rect[fill="#196127"],
+  body .contrib-legend li,
+  body .contribution-activity-listing .progress-bar {
+    background-color: base-color !important;
+    fill: base-color !important;
+    filter: brightness(brightness) !important;
+  }
+}
