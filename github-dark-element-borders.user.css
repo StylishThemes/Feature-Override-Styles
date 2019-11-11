@@ -1,0 +1,36 @@
+/* ==UserStyle==
+@name         GitHub Dark Border Elements
+@namespace    StylishThemes
+@version      0.0.1
+@description  GitHub Dark opinionated borders removal on various elements
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/Wikipedia-Dark-Gray-Text-Colors/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css
+@license      CC-BY-SA-4.0
+
+@var checkbox enableBorders "Enable borders" 1
+
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document regexp("^https?://((gist|guides|help|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$"),
+               domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"),
+               domain("www.githubstatus.com") {
+  if ( enableBorders == 0 ) {
+    html body .markdown-body code,
+    html body .merge-pr-more-commits,
+    html body .commit-ref,
+    html body .commit-link tt,
+    html body .markdown-body pre {
+      border: 0 !important;
+    }
+  } else {
+    html body .markdown-body code,
+    html body .merge-pr-more-commits,
+    html body .commit-ref,
+    html body .commit-link tt,
+    html body .markdown-body pre {
+      border: inherit;
+    }
+  }
+}
