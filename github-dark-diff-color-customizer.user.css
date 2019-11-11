@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name         GitHub Dark Diff Color Customizer
+@namespace    StylishThemes
+@version      0.0.2
+@description  A diff color customization style, colorblind friendly by default
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css
+@license      CC-BY-SA-4.0
+
+@var color  deleted-line  "Deleted line bkgd" #ffcc33
+@var color  deleted-text  "Deleted line text" #979797
+@var color  deleted-code  "Deleted code bkgd" #ffd96359
+@var color deleted-hover "Deleted Hover bkgd" #805f0059
+@var color    added-line    "Added Line bkgd" #3986ff
+@var color    added-text    "Added Line text" #fff
+@var color    added-code    "Added Code bkgd" #3986ff59
+@var color   added-hover   "Added Hover bkgd" #004cc159
+
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document regexp("^https?://((gist|guides|help|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
+  /*** Based on https://userstyles.org/styles/149864/github-diff-colorblind-friendly ***
+  .blob-num sets the colors in the number columns on the left
+  .blob-code sets the color of the rest of the line
+  .blob-code .x sets the word-diff highlight color
+  ***/
+  .highlight .blob-num-deletion,
+  .highlight .blob-code-deletion .x {
+    background-color: deleted-line !important;
+    color: deleted-text !important;
+  }
+  .highlight .blob-code-deletion {
+    background-color: deleted-code !important;
+    color: deleted-text) !important;
+  }
+  body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-num-deletion:not(.line-age),
+  body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-code-deletion:not(.line-age) {
+    background: deleted-hover !important;
+  }
+  body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-num-deletion:not(.line-age):before {
+    color: deleted-text !important;
+  }
+  .highlight .blob-num-addition,
+  .highlight .blob-code-addition .x {
+    background-color: added-line !important;
+    color: added-text !important;
+  }
+  .highlight .blob-code-addition {
+    background-color: added-code !important;
+    color: added-text !important;
+  }
+  body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-num-addition:not(.line-age),
+  body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-code-addition:not(.line-age) {
+    background: added-hover !important;
+  }
+  body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-num-addition:not(.line-age):before {
+    color: added-text !important;
+  }
+}
