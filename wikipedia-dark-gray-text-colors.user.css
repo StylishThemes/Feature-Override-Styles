@@ -1,0 +1,52 @@
+/* ==UserStyle==
+@name         Wikipedia Dark Gray Text Colors
+@namespace    StylishThemes
+@version      0.0.0
+@description  Wikipedia Dark custom text grayscale colors
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/Wikipedia-Dark-Gray-Text-Colors/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-gray-text-colors.user.css
+@license      CC-BY-SA-4.0
+@var color    color-1    "Header text colors" #eee
+@var color    color-2  "Main page text color" #ccc
+@var color    color-3  "Secondary text color" #aaa
+
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document regexp("https?://(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech|incubator)\.wikimedia)\.org\/.*"),
+               regexp("https?://([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\.wikimedia)\.org\/.+"),
+               regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
+  html h1, html h1 span,
+  html h2, html h2 span,
+  html h3, html h3 span,
+  html h4, html h4 span,
+  html h5, html h5 span,
+  html h6, html h6 span {
+    color: color-1 !important;
+  }
+  html p, html td, html i span,
+  html i, html li, html span,
+  div b, html dd, html textarea {
+    color: color-2 !important;
+  }
+  #footer-info li, html .footer-sidebar-text, html bdi {
+    color: color-3 !important;
+ }
+ /* fix link colors */
+ .hlist li a span, .hlist li a span:hover,
+ .potd-recent > div > ul > li > a > i, html a bdi {
+    color: inherit !important;
+  }
+}
+@-moz-document regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
+  html .mw-parser-output .archwiki-template-meta-related-articles-start p {
+    color: color-1 !important;
+  }
+  html .archwiki-template-box-note {
+    color: color-2 !important;
+  }
+  html .archwiki-template-message div {
+    color: color-3 !important;
+  }
+}

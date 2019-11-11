@@ -1,0 +1,31 @@
+{
+  "name": "Feature-Override-Styles",
+  "title": "Feature Override Styles",
+  "version": "0.0.0",
+  "author": "StylishThemes and contributors",
+  "contributors": [
+    {
+      "name": "The Community Contributors",
+      "url": "https://github.com/StylishThemes/Feature-Override-Styles/graphs/contributors"
+    }
+  ],
+  "repository": "StylishThemes/Feature-Override-Styles",
+  "homepage": "https://github.com/StylishThemes/Feature-Override-Styles",
+  "bugs": {
+    "url": "https://github.com/StylishThemes/Feature-Override-Styles/issues"
+  },
+  "devDependencies": {
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "updates": "^8.1.0",
+    "ver": "^4.3.0"
+  },
+  "scripts": {
+    "patch": "ver -p patch *.user.css *.user.css",
+    "minor": "ver -p minor *.user.css *.user.css",
+    "major": "ver -p major *.user.css *.user.css",
+    "stylelint": "stylelint --color -- *.user.css",
+    "test": "npm run stylelint",
+    "update": "updates -cu && npm install"
+  }
+}
