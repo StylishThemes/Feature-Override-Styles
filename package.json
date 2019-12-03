@@ -24,8 +24,9 @@
     "patch": "ver -p patch *.user.css",
     "minor": "ver -p minor *.user.css",
     "major": "ver -p major *.user.css",
-    "stylelint": "stylelint --color -- *.user.css",
-    "test": "npm run stylelint",
+    "lint": "stylelint --color -- *.user.css",
+    "lintfix": "stylelint --color --fix -- *.user.css",
+    "test": "npm run lint",
     "update": "updates -cu && npm install"
   }
 }
