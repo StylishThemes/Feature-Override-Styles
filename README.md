@@ -24,6 +24,9 @@ Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://add
 📦 [Install the Wikipedia Dark Gray Text Colors usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-gray-text-colors.user.css) Will customize Wikipedia Dark gray text colors, this is a companion script for  [Wikipedia Dark](https://github.com/StylishThemes/Wikipedia-Dark) style.<br>
 >Note: Not to be used on its own without the Wikipedia Dark style also installed ;)
 
+📦 [Install the Wikipedia Dark IMG Styles usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-img-styles.user.css) Will allow users to style by adding more infobox and other images in various wikis supported by our Wikipedia Dark, this is a companion script for  [Wikipedia Dark](https://github.com/StylishThemes/Wikipedia-Dark) style.<br>
+>Note: Not to be used on its own without the Wikipedia Dark style also installed ;)
+
 📦 [Install the GitHub Dark Element Borders usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css) [Will remove GitHub Dark's borders in some elements](https://github.com/StylishThemes/GitHub-Dark/issues/1017), this is a companion script for  [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) style.<br>
 >Note: Not to be used on its own without the GitHub Dark style also installed ;)
 

@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name         Wikipedia Dark IMG Styles
+@namespace    StylishThemes
+@version      0.0.5
+@description  Wikipedia Dark specific page brand/logo image style user overrides
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-img-styles.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@-moz-document regexp("https?:\/\/.*wik(i|t).*org.*") {
+	.rootpage-Xubuntu a.image img[src*="Xubuntu_logo_and_wordmark"] {
+		filter: invert(1) hue-rotate(180deg) contrast(80%);
+		background: inherit !important;
+	}
+}
