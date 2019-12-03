@@ -24,7 +24,8 @@
     html body .markdown-body pre {
       border: 0 !important;
     }
-  } else {
+  }
+  else {
     html body .markdown-body code,
     html body .merge-pr-more-commits,
     html body .commit-ref,
