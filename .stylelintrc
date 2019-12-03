@@ -7,6 +7,7 @@ ignoreFiles: "**/*.min.css"
 rules:
   at-rule-empty-line-before: null
   block-no-empty: null
+  block-closing-brace-newline-after: null
   block-opening-brace-space-before: null
   color-hex-case: null
   color-named: null
@@ -22,7 +23,7 @@ rules:
   function-url-quotes: always
   function-comma-space-after: null
   indentation: null
-  max-empty-lines: 0
+  max-empty-lines: null
   no-descending-specificity: null
   no-duplicate-selectors: null
   number-leading-zero: never
