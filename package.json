@@ -21,9 +21,9 @@
     "versions": "^7.0.3"
   },
   "scripts": {
-    "patch": "ver -p patch *.user.css",
-    "minor": "ver -p minor *.user.css",
-    "major": "ver -p major *.user.css",
+    "patch": "versions -p -C patch *.user.css",
+    "minor": "versions -p -C minor *.user.css",
+    "major": "versions -p -C major *.user.css",
     "lint": "stylelint --color -- *.user.css",
     "lintfix": "stylelint --color --fix -- *.user.css",
     "test": "npm run lint",
