@@ -19,24 +19,30 @@ After some team members already published styles for this purpose, [it was decid
 
 ## Installation
 
-Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) and then install the desired style below:
-
-📦 [Install the Wikipedia Dark Gray Text Colors usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-gray-text-colors.user.css) Will customize Wikipedia Dark gray text colors, this is a companion script for  [Wikipedia Dark](https://github.com/StylishThemes/Wikipedia-Dark) style.<br>
->Note: Not to be used on its own without the Wikipedia Dark style also installed ;)
-
-📦 [Install the Wikipedia Dark IMG Styles usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-img-styles.user.css) Will allow users to style by adding more infobox and other images in various wikis supported by our Wikipedia Dark, this is a companion script for  [Wikipedia Dark](https://github.com/StylishThemes/Wikipedia-Dark) style.<br>
->Note: Not to be used on its own without the Wikipedia Dark style also installed ;)
-
-📦 [Install the GitHub Dark Element Borders usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css) [Will remove GitHub Dark's borders in some elements](https://github.com/StylishThemes/GitHub-Dark/issues/1017), this is a companion script for  [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) style.<br>
->Note: Not to be used on its own without the GitHub Dark style also installed ;)
+Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) and then install the desired style.
 
 
-📦 [Install the GitHub Dark Diff Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css) [Is a color-blind friendly GitHub Dark's diff colors style](https://github.com/StylishThemes/GitHub-Dark/issues/1006), this is a companion script for  [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) style.<br>
->Note: Not to be used on its own without the GitHub Dark style also installed ;)
+## Styles
 
-📦 [Install the GitHub Dark Calendar Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css) is a [color-blind friendly GitHub Dark's diff colors style](https://github.com/StylishThemes/GitHub-Dark/issues/1002), this is a companion script for  [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) style.<br>
->Note: Not to be used on its own without the GitHub Dark style also installed ;)
-<br>
+### GitHub Dark
+
+These are companion styles for our [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) style.
+
+> Note: Some of these styles should not to be used without the GitHub Dark style also installed ;)
+
+* 📦 [Install the GitHub Dark Element Borders usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css). This style will [remove GitHub Dark's borders in some elements](https://github.com/StylishThemes/GitHub-Dark/issues/1017).
+* 📦 [Install the GitHub Dark Diff Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css) - this styles allows you to [customize GitHub's diff colors](https://github.com/StylishThemes/GitHub-Dark/issues/1006). It has color-blind freindly default settings.
+* 📦 [Install the GitHub Dark Calendar Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css) - this style allows you to [customize GitHub contributions calendar colors](https://github.com/StylishThemes/GitHub-Dark/issues/1002). It has color-blind freindly default settings.
+
+
+### Wikipedia Dark
+
+These are companion styles for our [Wikipedia Dark](https://github.com/StylishThemes/Wikipedia-Dark) style.
+
+> Note: Some of these styles should not be used without the Wikipedia Dark style also installed ;)
+
+* 📦 [Install the Wikipedia Dark Gray Text Colors usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-gray-text-colors.user.css). Will customize Wikipedia Dark gray text colors.
+* 📦 [Install the Wikipedia Dark IMG Styles usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-img-styles.user.css). Will allow users to style by adding more infobox and other images in various wikis supported by our Wikipedia Dark.
 
 ## Contributions
 
