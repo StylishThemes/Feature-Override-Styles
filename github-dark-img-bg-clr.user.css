@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name         GitHub Dark IMG Background Color
+@namespace    StylishThemes
+@version      0.0.6
+@description  A GitHub Dark image background color user customizable style.
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-img-bg-clr.user.css
+@preprocessor stylus
+@var color backgroundClr "Background color" rgba(255, 255, 255, .9)
+@var checkbox bgClrHack  "Background color hover hack" 0
+==/UserStyle== */
+
+@-moz-document regexp("^https?://((education|gist|guides|help|lab|launch-editor|raw|resources|status|developer|support)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"), domain("www.githubstatus.com") {
+  if not bgClrHack {
+    .comment-body.markdown-body img[data-canonical-src*="svg"],
+    .comment-body.markdown-body img.emoji,
+    .comment-body.markdown-body img[src*="raw.githubusercontent"],
+    .comment-body.markdown-body img[src*="png"] {
+      background-color: inherit !important;
+    }
+    .comment-body.markdown-body img:not([src*="raw.githubusercontent"]):not(.emoji):not([data-canonical-src*="dependabot"]):not([data-canonical-src*="githubapp.com"]):not([data-canonical-src*="cla-assistant.io"]):not([data-canonical-src*="cla.dotnetfoundation.org"]):not([data-canonical-src*="cla.opensource.microsoft.com"]) {
+      background: backgroundClr !important;
+    }
+  }
+  else {
+    .comment-body.markdown-body img[data-canonical-src*="svg"],
+    .comment-body.markdown-body img.emoji,
+    .comment-body.markdown-body img[src*="raw.githubusercontent"],
+    .comment-body.markdown-body img[src*="png"] {
+      background-color: inherit !important;
+    }
+    .comment-body.markdown-body img:not([src*="raw.githubusercontent"]):not(.emoji):not([data-canonical-src*="dependabot"]):not([data-canonical-src*="githubapp.com"]):not([data-canonical-src*="cla-assistant.io"]):not([data-canonical-src*="cla.dotnetfoundation.org"]):not([data-canonical-src*="cla.opensource.microsoft.com"]):hover {
+      background: backgroundClr !important;
+    }
+  }
+}
