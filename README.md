@@ -43,7 +43,7 @@ These are companion styles for our [Wikipedia Dark](https://github.com/StylishTh
 
 > Note: Some of these styles should not be used without the Wikipedia Dark style also installed ;)
 
-📦 [Install the Wikipedia Dark Gray Text Colors usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-gray-text-colors.user.css) - this style allos you to customize Wikipedia Dark gray text colors.<br>
+📦 [Install the Wikipedia Dark Gray Text Colors usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-gray-text-colors.user.css) - this style allows you to customize Wikipedia Dark gray text colors.<br>
 📦 [Install the Wikipedia Dark IMG Styles usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-img-styles.user.css) - this styles adds more infobox and other images settings in various wikis supported by our Wikipedia Dark.<br>
 
 ## Contributions
