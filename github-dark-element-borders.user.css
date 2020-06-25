@@ -18,7 +18,7 @@
                domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"),
                domain("www.githubstatus.com") {
   if (enableFileTableBorders) {
-    .Details .Box-row.border-top-0:nth-child(n + 3) {
+      html body .Details .Box-row.border-top-0:nth-child(n + 3)
       border-top: 1px solid #343434 !important;
     }
   }
