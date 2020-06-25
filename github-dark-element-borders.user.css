@@ -19,7 +19,7 @@
                domain("www.githubstatus.com") {
   if (enableFileTableBorders) {
       html body .Details .Box-row.border-top-0:nth-child(n + 3)
-      border-top: 1px solid #343434 !important;
+      border-top: 1px solid #343434;
     }
   }
 
