@@ -7,6 +7,7 @@
 @homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
 @supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-img-bg-clr.user.css
+@license      CC-BY-SA-4.0
 @preprocessor stylus
 @var color backgroundclr "Background color" rgba(255, 255, 255, .9)
 @var checkbox bgclrhack  "Background color hover hack" 0
