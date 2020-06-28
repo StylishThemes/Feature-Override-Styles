@@ -64,7 +64,8 @@
     border-top-left-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
-  .Box-row:first-of-type, .Box-header, .SelectMenu-tab, .graph-before-activity-overview {
+  .Box-row:first-of-type, .Box-header, .SelectMenu-tab, .graph-before-activity-overview,
+  .file-header {
     border-top-left-radius: general-border-radius;
     border-top-right-radius: general-border-radius;
   }
@@ -91,7 +92,7 @@
   .signed-commit-badge-large, .signed-commit-badge-medium, .signed-commit-badge-small,
   .timeline-comment, .thread-subscription-status, .markdown-body code, .markdown-body tt,
   .ajax-pagination-form .ajax-pagination-btn, .issues-reset-query-icon, .dropdown-menu,
-  .pagination a, .pagination em, .pagination span {
+  .pagination a, .pagination em, .pagination span, .file, .branch-name {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3 {
@@ -118,6 +119,9 @@
   }
   .rounded-left-1 {
     border-top-left-radius: general-border-radius !important;
+  }
+  .container-preview .tabnav-tabs > .selected:first-child {
+    border-top-left-radius: general-border-radius;
   }
   if align-user-status {
     .user-status-circle-badge-container {
