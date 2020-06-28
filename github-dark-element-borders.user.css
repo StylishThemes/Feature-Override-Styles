@@ -9,7 +9,6 @@
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css
 @license      CC-BY-SA-4.0
 
-@var checkbox enableFileTableBorders "Enable borders in file table" 0
 @var checkbox enableBorders "Enable borders" 1
 
 @preprocessor stylus
@@ -17,12 +16,6 @@
 @-moz-document regexp("^https?://((gist|guides|help|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$"),
                domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"),
                domain("www.githubstatus.com") {
-  if (enableFileTableBorders) {
-    html body .Details .Box-row.border-top-0:nth-child(n + 3) {
-      border-top: 1px solid #343434 !important;
-    }
-  }
-
   if ( enableBorders == 0 ) {
     html body .markdown-body code,
     html body .merge-pr-more-commits,
