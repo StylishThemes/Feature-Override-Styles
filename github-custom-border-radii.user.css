@@ -1,0 +1,132 @@
+/* ==UserStyle==
+@name         GitHub Custom Border Radii
+@namespace    StylishThemes
+@version      0.1.1
+@description  Revert border-radii on GitHub, it also allows user customization on some values.
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues/new/choose
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-custom-border-radii.user.css
+
+@license      CC-BY-SA-4.0
+
+@var text     general-border-radius "General border radius"       3px
+@var text     avatar-border-radius  "Avatar border radius"        2px
+@var text     button-border-radius  "Button border radius"        .25em
+@var text     pb-border-radius      "Progress bar border radius"  2px
+@var checkbox align-user-status     "Align user status w/ nick"   1
+
+@preprocessor stylus
+
+==/UserStyle== */
+@-moz-document regexp("^https?://((education|gist|graphql|guides|help|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
+  /* Revert New Design Changes */
+  .IssueLabel, .Counter {
+    border-radius: general-border-radius;
+  }
+  .Progress, .profile-rollup-wrapper .progress-bar {
+    border-radius: pb-border-radius;
+  }
+  .AvatarStack-body .avatar, .avatar {
+    border-radius: avatar-border-radius;
+  }
+  .avatar-user {
+    border-radius: avatar-border-radius !important;
+  }
+  .btn, .delete-topic-button, .clone-url-button:first-child .clone-url-link {
+    border-radius: button-border-radius;
+    box-shadow: none;
+  }
+  .url-box-clippy .zeroclipboard-button {
+    border-radius: 0 button-border-radius button-border-radius 0;
+  }
+  .subnav-item:first-child {
+    border-top-left-radius: general-border-radius;
+    border-bottom-left-radius: general-border-radius;
+  }
+  .subnav-item:last-child, .BtnGroup-item:last-child {
+    border-top-right-radius: general-border-radius;
+    border-bottom-right-radius: general-border-radius;
+  }
+  .btn-with-count {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .BtnGroup-parent:first-child .BtnGroup-item {
+    border-top-left-radius: general-border-radius;
+    border-bottom-left-radius: general-border-radius;
+  }
+  .BtnGroup-parent:last-child .BtnGroup-item {
+    border-right-width: 1px;
+    border-top-right-radius: general-border-radius;
+    border-bottom-right-radius: general-border-radius;
+  }
+  .BtnGroup-item:first-child {
+    border-top-left-radius: general-border-radius;
+    border-bottom-left-radius: general-border-radius;
+  }
+  .Box-row:first-of-type, .Box-header, .SelectMenu-tab, .graph-before-activity-overview {
+    border-top-left-radius: general-border-radius;
+    border-top-right-radius: general-border-radius;
+  }
+  .header-search-current .jump-to-suggestions {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: general-border-radius;
+    border-bottom-left-radius: general-border-radius;
+  }
+  .BtnGroup-item {
+    border-right-width: 0;
+    border-radius: 0;
+  }
+  .BtnGroup-parent .BtnGroup-item {
+    border-right-width: 0;
+    border-radius: 0;
+  }
+  .form-control, .form-select, .social-count, .filter-item, .state, .State, .label,
+  .Label, .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current="false"]),
+  .tabnav-tab[aria-selected="true"], .reaction-sort-item, .suggester, .suggester li:first-child,
+  .suggester li:last-child, .delete-topic-button, .topic-tag, .topic-tag-action, .ColorSwatch,
+  .label-select-menu .color, kbd, .SelectMenu-modal, .IssueLabel--big.lh-condensed, .menu, .Box,
+  .flash, .boxed-group, .boxed-group-inner, .user-status-circle-badge, .timeline-comment-label,
+  .signed-commit-badge-large, .signed-commit-badge-medium, .signed-commit-badge-small,
+  .timeline-comment, .thread-subscription-status, .markdown-body code, .markdown-body tt,
+  .ajax-pagination-form .ajax-pagination-btn, .issues-reset-query-icon, .dropdown-menu,
+  .pagination a, .pagination em, .pagination span {
+    border-radius: general-border-radius;
+  }
+  .boxed-group .heading, .boxed-group > h3 {
+    border-radius: general-border-radius general-border-radius 0 0;
+  }
+  .discussion-topic-header, .previewable-comment-form .tabnav {
+    border-radius: general-border-radius general-border-radius 0 0 !important;
+  }
+  .Box--responsive .Box-header {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-left-radius: general-border-radius;
+    border-top-right-radius: general-border-radius;
+  }
+  .Box-row:last-of-type {
+    border-bottom-right-radius: general-border-radius;
+    border-bottom-left-radius: general-border-radius;
+  }
+  .rounded-1, .rounded-2 {
+    border-radius: general-border-radius !important;
+  }
+  .rounded-bottom-1, .rounded-left-1 {
+    border-bottom-left-radius: general-border-radius !important;
+  }
+  .rounded-left-1 {
+    border-top-left-radius: general-border-radius !important;
+  }
+  if align-user-status {
+    .user-status-circle-badge-container {
+      margin-bottom: -45px;
+    }
+  }
+  else {
+    .user-status-circle-badge-container {
+      margin-bottom: 32px;
+    }
+  }
+}
