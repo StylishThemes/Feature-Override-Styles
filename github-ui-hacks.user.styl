@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name         GitHub UI Hacks
+@namespace    StylishThemes
+@version      0.1.0
+@description  A collection of hacks for the new GitHub UI
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-ui-hacks.user.styl
+@license      CC-BY-SA-4.0
+@preprocessor stylus
+
+@var checkbox showLatestCommit "Show latest commit" 0
+
+==/UserStyle== */
+
+@-moz-document regexp("^https?://((gist|guides|help|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$"),
+domain("graphql-explorer.githubapp.com"),
+domain("githubusercontent.com"),
+domain("www.githubstatus.com") {
+  // Inject userstyle even when all options are disabled.
+  stylus-fix { content: 'true' }
+
+  if (showLatestCommit) {
+    .file-navigation ~ .Box .Details {
+      // Show by default.
+      &--on .Details-content--shown,
+      &:not(.Details--on) .Details-content--hidden {
+        display: unset !important
+      }
+
+      /// Hide on toggle.
+      &.Details--on .Details-content--hidden {
+        display: none !important
+      }
+
+      // Show commit messages.
+      :not(.Details--on) .ws-pre-wrap {
+        display: none !important
+      }
+    }
+  }
+}
