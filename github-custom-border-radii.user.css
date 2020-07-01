@@ -6,7 +6,6 @@
 @homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
 @supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues/new/choose
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-custom-border-radii.user.css
-
 @license      CC-BY-SA-4.0
 
 @var text     general-border-radius "General border radius"       3px
@@ -16,7 +15,6 @@
 @var checkbox align-user-status     "Align user status w/ nick"   1
 
 @preprocessor stylus
-
 ==/UserStyle== */
 @-moz-document regexp("^https?://((education|gist|graphql|guides|help|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
   /* Revert New Design Changes */
