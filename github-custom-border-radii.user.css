@@ -46,7 +46,7 @@
     border-top-left-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
-  .subnav-item:last-child, .BtnGroup-item:last-child {
+  .subnav-item:last-child, .BtnGroup-item:last-child, .social-count {
     border-top-right-radius: general-border-radius;
     border-bottom-right-radius: general-border-radius;
   }
@@ -86,9 +86,8 @@
     border-right-width: 0;
     border-radius: 0;
   }
-  .form-control, .form-select, .social-count, .filter-item, .state, .State, .label,
-  .Label, .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current="false"]),
-  .tabnav-tab[aria-selected="true"], .reaction-sort-item, .suggester, .suggester li:first-child,
+  .form-control, .form-select, .filter-item, .state, .State, .label,
+  .Label, .reaction-sort-item, .suggester, .suggester li:first-child,
   .suggester li:last-child, .delete-topic-button, .topic-tag, .topic-tag-action, .ColorSwatch,
   .label-select-menu .color, kbd, .SelectMenu-modal, .IssueLabel--big.lh-condensed, .menu, .Box,
   .flash, .boxed-group, .boxed-group-inner, .user-status-circle-badge, .timeline-comment-label,
@@ -98,7 +97,9 @@
   .pagination a, .pagination em, .pagination span, .file, .branch-name {
     border-radius: general-border-radius;
   }
-  .boxed-group .heading, .boxed-group > h3 {
+  .boxed-group .heading, .boxed-group > h3,
+  .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current="false"]),
+  .tabnav-tab[aria-selected="true"], .select-menu-tabs .select-menu-tab-nav, .select-menu-tabs a {
     border-radius: general-border-radius general-border-radius 0 0;
   }
   .discussion-topic-header, .previewable-comment-form .tabnav {
