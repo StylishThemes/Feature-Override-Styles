@@ -54,6 +54,10 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
+  .upload-enabled textarea {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
   .BtnGroup-parent:first-child .BtnGroup-item {
     border-top-left-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
@@ -68,7 +72,7 @@
     border-bottom-left-radius: general-border-radius;
   }
   .Box-row:first-of-type, .Box-header, .SelectMenu-tab, .graph-before-activity-overview,
-  .file-header {
+  .file-header, .timeline-comment-header {
     border-top-left-radius: general-border-radius;
     border-top-right-radius: general-border-radius;
   }
@@ -94,7 +98,9 @@
   .signed-commit-badge-large, .signed-commit-badge-medium, .signed-commit-badge-small,
   .timeline-comment, .thread-subscription-status, .markdown-body code, .markdown-body tt,
   .ajax-pagination-form .ajax-pagination-btn, .issues-reset-query-icon, .dropdown-menu,
-  .pagination a, .pagination em, .pagination span, .file, .branch-name {
+  .pagination a, .pagination em, .pagination span, .file, .branch-name, .add-line-comment,
+  .commit-ref, .sidebar-menu, .sidebar-module, pre, .highlight, .select-menu-modal,
+  .tooltipped::after, .markdown-body kbd, .select-menu-text-filter input, .btn-mktg {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
@@ -105,18 +111,24 @@
   .discussion-topic-header, .previewable-comment-form .tabnav {
     border-radius: general-border-radius general-border-radius 0 0 !important;
   }
+  .select-menu-item.last-visible, .select-menu-list:last-child .select-menu-item:last-child {
+    border-radius: 0 0 general-border-radius general-border-radius
+  }
   .Box--responsive .Box-header {
     border-left-width: 1px;
     border-right-width: 1px;
     border-top-left-radius: general-border-radius;
     border-top-right-radius: general-border-radius;
   }
-  .Box-row:last-of-type {
+  .Box-row:last-of-type, .drag-and-drop {
     border-bottom-right-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
   .rounded-1, .rounded-2 {
     border-radius: general-border-radius !important;
+  }
+  .comment-reactions-options .reaction-summary-item:first-child {
+    border-bottom-left-radius: general-border-radius;
   }
   .rounded-bottom-1, .rounded-left-1 {
     border-bottom-left-radius: general-border-radius !important;
