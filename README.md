@@ -30,7 +30,7 @@ These are companion styles for our [GitHub Dark](https://github.com/StylishTheme
 
 > Note: Some of these styles should not to be used without the GitHub Dark style also installed ;)
 
-📦 [Install the GitHub Custom Border Radii usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-custom-border-radii.user.css). This style will revert GitHub Dark's borders radii and allows customization.<br>
+📦 [Install the GitHub Custom Border Radii usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-custom-border-radii.user.css). This style will revert GitHub Dark's borders radii and allows user customization.<br>
 📦 [Install the GitHub Dark Element Borders usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css). This style will [remove GitHub Dark's borders in some elements](https://github.com/StylishThemes/GitHub-Dark/issues/1017).<br>
 📦 [Install the GitHub Dark Diff Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css) - this styles allows you to [customize GitHub's diff colors](https://github.com/StylishThemes/GitHub-Dark/issues/1006). It has color-blind friendly default settings.<br>
 📦 [Install the GitHub Dark Calendar Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-calendar-color-customizer.user.css) - this style allows you to [customize GitHub contributions calendar colors](https://github.com/StylishThemes/GitHub-Dark/issues/1002). It has color-blind friendly default settings.<br>
