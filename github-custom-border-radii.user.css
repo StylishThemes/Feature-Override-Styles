@@ -26,6 +26,9 @@
   .Progress, .profile-rollup-wrapper .progress-bar {
     border-radius: pb-border-radius;
   }
+  .user-bar {
+    border-radius: 0;
+  }
   .AvatarStack-body .avatar, .avatar {
     border-radius: avatar-border-radius;
   }
