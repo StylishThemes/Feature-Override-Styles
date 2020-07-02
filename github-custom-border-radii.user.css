@@ -111,7 +111,7 @@
     border-radius: general-border-radius general-border-radius 0 0 !important;
   }
   .select-menu-item.last-visible, .select-menu-list:last-child .select-menu-item:last-child {
-    border-radius: 0 0 general-border-radius general-border-radius
+    border-radius: 0 0 general-border-radius general-border-radius;
   }
   .Box--responsive .Box-header {
     border-left-width: 1px;
