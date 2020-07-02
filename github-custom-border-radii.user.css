@@ -98,7 +98,8 @@
   .ajax-pagination-form .ajax-pagination-btn, .issues-reset-query-icon, .dropdown-menu,
   .pagination a, .pagination em, .pagination span, .file, .branch-name, .add-line-comment,
   .commit-ref, .sidebar-menu, .sidebar-module, pre, .highlight, .select-menu-modal,
-  .tooltipped::after, .markdown-body kbd, .select-menu-text-filter input, .btn-mktg {
+  .tooltipped::after, .markdown-body kbd, .select-menu-text-filter input, .btn-mktg,
+  .ais-SearchBox-input {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
@@ -122,7 +123,7 @@
     border-bottom-right-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
-  .rounded-1, .rounded-2 {
+  .rounded-1, .rounded-2, .profile-rollup-content .rounded-1 {
     border-radius: general-border-radius !important;
   }
   .comment-reactions-options .reaction-summary-item:first-child {
