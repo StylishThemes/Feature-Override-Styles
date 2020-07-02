@@ -14,16 +14,20 @@
 
 @preprocessor stylus
 ==/UserStyle== */
-@-moz-document regexp("^https?://((gist|guides|help|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
+@-moz-document regexp("^https?://((gist|guides|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
   /* contribution calendar */
-  body .calendar-graph rect[fill="#c6e48b"],
-  body .calendar-graph rect[fill="#7bc96f"],
-  body .calendar-graph rect[fill="#239a3b"],
-  body .calendar-graph rect[fill="#196127"],
-  body .contrib-legend li,
-  body .contribution-activity-listing .progress-bar {
+  body .calendar-graph rect[fill="#216e39"],
+  body .calendar-graph rect[fill="#9be9a8"],
+  body .calendar-graph rect[fill="#40c463"],
+  body .calendar-graph rect[fill="#30a14e"],
+  body .contrib-legend .legend li[style],
+  body .contribution-activity-listing .progress-bar[style*="background-color"] {
     background-color: base-color !important;
     fill: base-color !important;
     filter: brightness(brightness) !important;
+  }
+  body .contrib-legend .legend li[style*="#ebedf0"] {
+    background-color: #282828 !important;
+    fill: #282828 !important;
   }
 }
