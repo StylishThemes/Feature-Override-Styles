@@ -12,7 +12,7 @@
 @var text     avatar-border-radius  "Avatar border radius"        2px
 @var text     button-border-radius  "Button border radius"        .25em
 @var text     pb-border-radius      "Progress bar border radius"  2px
-@var checkbox align-user-status     "Align user status w/ nick"   1
+@var checkbox align-user-status     "User status below avatar"    1
 
 @preprocessor stylus
 ==/UserStyle== */
@@ -138,14 +138,22 @@
   .container-preview .tabnav-tabs > .selected:first-child {
     border-top-left-radius: general-border-radius;
   }
+  /* pull user status down and align else default values */
   if align-user-status {
     .user-status-circle-badge-container {
-      margin-bottom: -45px;
+      position: static;
+      margin-left: 0;
+      margin-bottom: -10px;
+      margin-top: 10px;
+    }
+    .CircleBadge, .page-profile .user-status-container {
+      background: transparent;
     }
   }
   else {
     .user-status-circle-badge-container {
       margin-bottom: 32px;
+      margin-left: -40px;
     }
   }
 }
