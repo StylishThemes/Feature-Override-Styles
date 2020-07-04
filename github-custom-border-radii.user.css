@@ -21,7 +21,8 @@
   .IssueLabel, .Counter {
     border-radius: general-border-radius;
   }
-  .Progress, .profile-rollup-wrapper .progress-bar, .progress-bar {
+  .Progress, .profile-rollup-wrapper .progress-bar, .progress-bar,
+	.sidebar-progress-bar .progress-bar {
     border-radius: pb-border-radius;
   }
   .user-bar {
