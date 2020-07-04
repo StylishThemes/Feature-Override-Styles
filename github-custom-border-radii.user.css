@@ -99,7 +99,7 @@
   .pagination a, .pagination em, .pagination span, .file, .branch-name, .add-line-comment,
   .commit-ref, .sidebar-menu, .sidebar-module, pre, .highlight, .select-menu-modal,
   .tooltipped::after, .markdown-body kbd, .select-menu-text-filter input, .btn-mktg,
-  .ais-SearchBox-input {
+  .ais-SearchBox-input, .branch-action-body {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
