@@ -17,8 +17,8 @@ This repo houses override styles for handling user requests in a simple manner, 
 
 After some team members already published styles for this purpose, [it was decided to make this repo happen](https://github.com/StylishThemes/GitHub-Dark/issues/1008).
 
-Feel free to help us out in any capacity, StylishThemes is always looking for help with our already busy schedule and jobs.
-Open and issue to dicscuss any related contribution minutia or just to clear up any doubts you may have.
+Feel free to help us out in any capacity, StylishThemes is always looking for help with our busy organization workload.
+Open an issue to discuss any related minutia or just to clear up any doubts you may have.
 
 ## Installation
 
