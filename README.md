@@ -30,11 +30,19 @@ These are companion styles for our [GitHub Dark](https://github.com/StylishTheme
 
 > Note: Some of these styles should not to be used without the GitHub Dark style also installed ;)
 
-📦 [Install the GitHub Custom Border Radii usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-custom-border-radii.user.css). This style will revert GitHub Dark's borders radii and allows user customization.<br>
-📦 [Install the GitHub Dark Element Borders usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css). This style will [remove GitHub Dark's borders in some elements](https://github.com/StylishThemes/GitHub-Dark/issues/1017).<br>
-📦 [Install the GitHub Dark Diff Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css) - this styles allows you to [customize GitHub's diff colors](https://github.com/StylishThemes/GitHub-Dark/issues/1006). It has color-blind friendly default settings.<br>
-📦 [Install the GitHub Dark Calendar Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-calendar-color-customizer.user.css) - this style allows you to [customize GitHub contributions calendar colors](https://github.com/StylishThemes/GitHub-Dark/issues/1002). It has color-blind friendly default settings.<br>
-📦 [Install the GitHub Dark IMG Background Color usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-img-bg-clr.user.css). This style style that attempts to handle the background color with [some comment images](https://github.com/StylishThemes/GitHub-Dark/issues/983)<br>
+📦 [Install the GitHub Dark Custom Blame usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-custom-blame.user.css).<br>
+This style allows fine grained blame element customization.<br>
+📦 [Install the GitHub Custom Border Radii usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-custom-border-radii.user.css).<br>
+This style will revert GitHub Dark's borders radii and allows user customization.<br>
+📦 [Install the GitHub Dark Element Borders usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css).<br>
+This style will [remove GitHub Dark's borders in some elements](https://github.com/StylishThemes/GitHub-Dark/issues/1017).<br>
+📦 [Install the GitHub Dark Diff Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css).<br>
+This styles allows you to [customize GitHub's diff colors](https://github.com/StylishThemes/GitHub-Dark/issues/1006).<br>
+It features color-blind friendly default settings.<br>
+📦 [Install the GitHub Dark Calendar Color Customizer usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-calendar-color-customizer.user.css)<br>
+This style allows you to [customize GitHub contributions calendar colors](https://github.com/StylishThemes/GitHub-Dark/issues/1002).<br>
+📦 [Install the GitHub Dark IMG Background Color usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-img-bg-clr.user.css).<br>
+This style style that attempts to handle the background color with [some comment images](https://github.com/StylishThemes/GitHub-Dark/issues/983)<br>
 >Note: Not to be used on its own without the GitHub Dark style also installed ;)
 
 
@@ -44,13 +52,15 @@ These are companion styles for our [Wikipedia Dark](https://github.com/StylishTh
 
 > Note: Some of these styles should not be used without the Wikipedia Dark style also installed ;)
 
-📦 [Install the Wikipedia Dark Gray Text Colors usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-gray-text-colors.user.css) - this style allows you to customize Wikipedia Dark gray text colors.<br>
-📦 [Install the Wikipedia Dark IMG Styles usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-img-styles.user.css) - this styles adds more infobox and other images settings in various wikis supported by our Wikipedia Dark.<br>
+📦 [Install the Wikipedia Dark Gray Text Colors usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-gray-text-colors.user.css)<br>
+This style allows you to customize Wikipedia Dark gray text colors.<br>
+📦 [Install the Wikipedia Dark IMG Styles usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-img-styles.user.css)<br>
+This styles adds more infobox and other images settings in various wikis supported by our Wikipedia Dark.<br>
 
 ## Contributions
 
 If you would like to contribute to this repository, please...
 
-1. 👓 Read the [contribution guidelines](./.github/CONTRIBUTING.md).
+1. 👓 Read the [contribution guidelines](.CONTRIBUTING.md).
 1. ![repo-forked](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) [Fork](https://github.com/StylishThemes/Feature-Override-Styles/fork) or ![cloud-download](https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png) [download](https://github.com/StylishThemes/Feature-Override-Styles/archive/master.zip) this repository.
 1. 👌 Create a pull request!

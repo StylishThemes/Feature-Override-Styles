@@ -64,8 +64,8 @@ If you don't know CSS very well and have found a missing style, please include a
     ```
 
 * Try to wrap lines at around 80 characters.
-  * If possible, reduce any added selectors. Remember that Stylus requires an `!important` flag to override default styling, so a selector starting from the body isn't always necessary.
-  * Don't add any inline comments. If you want to make a comment, add it as a note in the commit.
+  * If possible, reduce any added selectors. Remember that Stylus may require an `!important` flag to override default styling, so a selector starting from the body isn't always necessary, use `!important` only if necessary.
+  * Do add any inline comments as well as note in the commit message body (not title).
   * If your CSS definition already exists within the style, do not add it again! Add your selector to the existing definition.
 * Insert any new CSS selectors in any available slot before the style definition, or on a new line as needed.
 * If you want to add a new userstyle variable, please open an issue and discuss it with us first.
