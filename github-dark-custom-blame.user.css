@@ -1,0 +1,125 @@
+/* ==UserStyle==
+@name         GitHub Dark Custom Blame
+@namespace    StylishThemes
+@version      1.0.7
+@description  A style that allows fine grained blame element user customization.
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues/new/choose
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-custom-blame.user.css
+@license      CC-BY-SA-4.0
+
+@var color    base-color-rgb       "Base color scheme" rgba(79, 140, 201, 1)
+@var color    commit-date-color    "Commit date color" #bebebe
+@var checkbox use-date-color       "Use commit date color" 1
+@var text     legend-block-size    "Legend block size" 10px
+@var text     legend-blk-radius    "Legend block radius" 2px
+@var text     blame-border-width   "Blame border width"  3px
+
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+  .line-age-legend .heat {
+    width: legend-block-size;
+    height: legend-block-size;
+    margin: 2px 0 0;
+    border-radius: legend-blk-radius;
+  }
+  .heat[data-heat="1"] {
+    background: rgba(base-color-rgb, 1);
+  }
+  .heat[data-heat="2"] {
+    background: rgba(base-color-rgb, .9);
+  }
+  .heat[data-heat="3"] {
+    background: rgba(base-color-rgb, .8);
+  }
+  .heat[data-heat="4"] {
+    background: rgba(base-color-rgb, .7);
+  }
+  .heat[data-heat="5"] {
+    background: rgba(base-color-rgb, .6);
+  }
+  .heat[data-heat="6"] {
+    background: rgba(base-color-rgb, .5);
+  }
+  .heat[data-heat="7"] {
+    background: rgba(base-color-rgb, .4);
+  }
+  .heat[data-heat="8"] {
+    background: rgba(base-color-rgb, .3);
+  }
+  .heat[data-heat="9"] {
+    background: rgba(base-color-rgb, .2);
+  }
+  .heat[data-heat="10"] {
+    background: rgba(base-color-rgb, .1);
+  }
+  .blame-commit[data-heat="1"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, 1);
+  }
+  .blame-commit[data-heat="2"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .9);
+  }
+  .blame-commit[data-heat="3"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .8);
+  }
+  .blame-commit[data-heat="4"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .7);
+  }
+  .blame-commit[data-heat="5"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .6);
+  }
+  .blame-commit[data-heat="6"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .5);
+  }
+  .blame-commit[data-heat="7"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .4);
+  }
+  .blame-commit[data-heat="8"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .3);
+  }
+  .blame-commit[data-heat="9"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .2);
+  }
+  .blame-commit[data-heat="10"] {
+    border-right: blame-border-width solid rgba(base-color-rgb, .1);
+  }
+  if use-date-color {
+    .blame-commit-date[data-heat] {
+      color: commit-date-color !important;
+    }
+  }
+  else {
+    .blame-commit-date[data-heat="1"] {
+      color: rgba(base-color-rgb, 1);
+    }
+    .blame-commit-date[data-heat="2"] {
+      color: rgba(base-color-rgb, .9);
+    }
+    .blame-commit-date[data-heat="3"] {
+      color: rgba(base-color-rgb, .8);
+    }
+    .blame-commit-date[data-heat="4"] {
+      color: rgba(base-color-rgb, .7);
+    }
+    .blame-commit-date[data-heat="5"] {
+      color: rgba(base-color-rgb, .6);
+    }
+    .blame-commit-date[data-heat="6"] {
+      color: rgba(base-color-rgb, .5);
+    }
+    .blame-commit-date[data-heat="7"] {
+      color: rgba(base-color-rgb, .4);
+    }
+    .blame-commit-date[data-heat="8"] {
+      color: rgba(base-color-rgb, .3);
+    }
+    .blame-commit-date[data-heat="9"] {
+      color: rgba(base-color-rgb, .2);
+    }
+    .blame-commit-date[data-heat="10"] {
+      color: rgba(base-color-rgb, .1);
+    }
+  }
+}
