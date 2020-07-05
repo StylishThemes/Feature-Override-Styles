@@ -13,9 +13,12 @@
 
 ## Introduction
 
-This repo houses override styles for handling user requests in a simple manner, where its not desirable to include in the main style instead for any number of given reasons, this is where some dreams may come true
+This repo houses override styles for handling user requests in a simple manner, or, where its not desirable to include in the main style for any number of given reasons, this repo is where some dreams may come true maybe a little faster.
 
 After some team members already published styles for this purpose, [it was decided to make this repo happen](https://github.com/StylishThemes/GitHub-Dark/issues/1008).
+
+Feel free to help us out in any capacity, StylishThemes is always looking for help with our already busy schedule and jobs.
+Open and issue to dicscuss any related contribution minutia or just to clear up any doubts you may have.
 
 ## Installation
 
