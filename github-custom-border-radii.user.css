@@ -41,11 +41,12 @@
   .url-box-clippy .zeroclipboard-button {
     border-radius: 0 button-border-radius button-border-radius 0;
   }
-  .subnav-item:first-child {
+  .subnav-item:first-child, .radio-label:first-of-type {
     border-top-left-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
-  .subnav-item:last-child, .BtnGroup-item:last-child, .social-count {
+  .subnav-item:last-child, .BtnGroup-item:last-child, .social-count,
+  .radio-label:last-of-type {
     border-top-right-radius: general-border-radius;
     border-bottom-right-radius: general-border-radius;
   }
@@ -71,7 +72,7 @@
     border-bottom-left-radius: general-border-radius;
   }
   .Box-row:first-of-type, .Box-header, .SelectMenu-tab, .graph-before-activity-overview,
-  .file-header, .timeline-comment-header {
+  .file-header, .timeline-comment-header, .uploaded-files.not-populated + .drop-target .drop-target-label {
     border-top-left-radius: general-border-radius;
     border-top-right-radius: general-border-radius;
   }
@@ -103,7 +104,8 @@
   .ais-SearchBox-input, .branch-action-body, .upload-enabled.focused,
   .form-group.errored .error, .form-group.errored .success, .form-group.errored .warning,
   .form-group.successed .error, .form-group.successed .success, .form-group.successed .warning,
-  .form-group.warn .error, .form-group.warn .success, .form-group.warn .warning {
+  .form-group.warn .error, .form-group.warn .success, .form-group.warn .warning,
+  .full-commit, .compare-pr-placeholder, .markdown-body .highlight pre, .markdown-body pre {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
