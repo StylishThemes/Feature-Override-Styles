@@ -111,7 +111,8 @@
   }
   .boxed-group .heading, .boxed-group > h3,
   .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current="false"]),
-  .tabnav-tab[aria-selected="true"], .select-menu-tabs .select-menu-tab-nav, .select-menu-tabs a {
+  .tabnav-tab[aria-selected="true"], .select-menu-tabs .select-menu-tab-nav, .select-menu-tabs a,
+  .table-list-header {
     border-radius: general-border-radius general-border-radius 0 0;
   }
   .discussion-topic-header, .previewable-comment-form .tabnav {
