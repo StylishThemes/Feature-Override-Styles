@@ -3,11 +3,11 @@
 @namespace    StylishThemes
 @version      1.0.12
 @description  A diff color customization style, colorblind friendly by default
-@author       StylishThemes
+@author       StylishThemes and contributors
 @homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
 @supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues/new/choose
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css
-@license      CC-BY-SA-4.0
+@license      MIT
 
 @var color  deleted-line  "Deleted line bkgd" #ffcc33
 @var color  deleted-text  "Deleted line text" #979797

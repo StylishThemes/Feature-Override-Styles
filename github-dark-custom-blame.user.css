@@ -3,10 +3,11 @@
 @namespace    StylishThemes
 @version      1.0.12
 @description  A style that allows fine grained blame element user customization.
+@author       StylishThemes and contributors
 @homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
 @supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues/new/choose
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-custom-blame.user.css
-@license      CC-BY-SA-4.0
+@license      MIT
 
 @var color    base-color-rgb       "Base color scheme" rgba(79, 140, 201, 1)
 @var color    commit-date-color    "Commit date color" #bebebe

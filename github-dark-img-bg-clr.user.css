@@ -3,16 +3,17 @@
 @namespace    StylishThemes
 @version      1.0.12
 @description  A GitHub Dark image background color user customizable style.
-@author       StylishThemes
+@author       StylishThemes and contributors
 @homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
 @supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-img-bg-clr.user.css
-@license      CC-BY-SA-4.0
-@preprocessor stylus
+@license      MIT
+
 @var color backgroundclr "Background color" rgba(255, 255, 255, .9)
 @var checkbox bgclrhack  "Background color hover hack" 0
-==/UserStyle== */
 
+@preprocessor stylus
+==/UserStyle== */
 @-moz-document regexp("^https?://((education|gist|guides|help|lab|launch-editor|raw|resources|status|developer|support)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"), domain("www.githubstatus.com") {
   if not bgclrhack {
     .comment-body.markdown-body img[data-canonical-src*="svg"],

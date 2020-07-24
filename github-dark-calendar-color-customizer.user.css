@@ -3,11 +3,11 @@
 @namespace    StylishThemes
 @version      1.0.12
 @description  A GitHub Dark calendar color customization style
-@author       StylishThemes
+@author       StylishThemes and contributors
 @homepageURL  https://github.com/StylishThemes/Feature-Override-Styles/
 @supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues/new/choose
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-calendar-color-customizer.user.css
-@license      CC-BY-SA-4.0
+@license      MIT
 
 @var color base-color "Base color" #7bc96f
 @var text  brightness "Brightness" 100%
