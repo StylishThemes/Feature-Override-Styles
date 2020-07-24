@@ -26,36 +26,37 @@
   .blob-code sets the color of the rest of the line
   .blob-code .x sets the word-diff highlight color
   ***/
+  i = !important
   .highlight .blob-num-deletion,
   .highlight .blob-code-deletion .x {
-    background-color: deleted-line !important;
-    color: deleted-text !important;
+    background-color: deleted-line i;
+    color: deleted-text i;
   }
   .highlight .blob-code-deletion {
-    background-color: deleted-code !important;
-    color: deleted-text !important;
+    background-color: deleted-code i;
+    color: deleted-text i;
   }
   body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-num-deletion:not(.line-age),
   body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-code-deletion:not(.line-age) {
-    background: deleted-hover !important;
+    background: deleted-hover i;
   }
   body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-num-deletion:not(.line-age):before {
-    color: deleted-text !important;
+    color: deleted-text i;
   }
   .highlight .blob-num-addition,
   .highlight .blob-code-addition .x {
-    background-color: added-line !important;
-    color: added-text !important;
+    background-color: added-line i;
+    color: added-text i;
   }
   .highlight .blob-code-addition {
-    background-color: added-code !important;
-    color: added-text !important;
+    background-color: added-code i;
+    color: added-text i;
   }
   body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-num-addition:not(.line-age),
   body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-code-addition:not(.line-age) {
-    background: added-hover !important;
+    background: added-hover i;
   }
   body .highlight:not(.lines) tr:not(.inline-comments):hover td.blob-num-addition:not(.line-age):before {
-    color: added-text !important;
+    color: added-text i;
   }
 }

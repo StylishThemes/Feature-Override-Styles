@@ -15,15 +15,16 @@
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document regexp("^https?://((education|gist|guides|help|lab|launch-editor|raw|resources|status|developer|support)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"), domain("www.githubstatus.com") {
+  i = !important
   if not bgclrhack {
     .comment-body.markdown-body img[data-canonical-src*="svg"],
     .comment-body.markdown-body img.emoji,
     .comment-body.markdown-body img[src*="raw.githubusercontent"],
     .comment-body.markdown-body img[src*="png"] {
-      background-color: inherit !important;
+      background-color: inherit i;
     }
     .comment-body.markdown-body img:not([src*="raw.githubusercontent"]):not(.emoji):not([data-canonical-src*="dependabot"]):not([data-canonical-src*="githubapp.com"]):not([data-canonical-src*="cla-assistant.io"]):not([data-canonical-src*="cla.dotnetfoundation.org"]):not([data-canonical-src*="cla.opensource.microsoft.com"]) {
-      background: backgroundclr !important;
+      background: backgroundclr i;
     }
   }
   else {
@@ -31,10 +32,10 @@
     .comment-body.markdown-body img.emoji,
     .comment-body.markdown-body img[src*="raw.githubusercontent"],
     .comment-body.markdown-body img[src*="png"] {
-      background-color: inherit !important;
+      background-color: inherit i;
     }
     .comment-body.markdown-body img:not([src*="raw.githubusercontent"]):not(.emoji):not([data-canonical-src*="dependabot"]):not([data-canonical-src*="githubapp.com"]):not([data-canonical-src*="cla-assistant.io"]):not([data-canonical-src*="cla.dotnetfoundation.org"]):not([data-canonical-src*="cla.opensource.microsoft.com"]):hover {
-      background: backgroundclr !important;
+      background: backgroundclr i;
     }
   }
 }

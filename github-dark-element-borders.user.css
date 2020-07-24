@@ -16,22 +16,18 @@
 @-moz-document regexp("^https?://((gist|guides|help|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$"),
                domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"),
                domain("www.githubstatus.com") {
+
+  /* hack to show style in popup when checkbox is disabled */
+  stylus-fix { content: 'true' }
+  i = !important
+
   if ( enableBorders == 0 ) {
     html body .markdown-body code,
     html body .merge-pr-more-commits,
     html body .commit-ref,
     html body .commit-link tt,
     html body .markdown-body pre {
-      border: 0 !important;
-    }
-  }
-  else {
-    html body .markdown-body code,
-    html body .merge-pr-more-commits,
-    html body .commit-ref,
-    html body .commit-link tt,
-    html body .markdown-body pre {
-      border: inherit;
+      border: 0 i;
     }
   }
 }
