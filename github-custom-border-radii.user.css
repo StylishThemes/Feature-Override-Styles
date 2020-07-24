@@ -18,6 +18,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
   /* Revert New Design Changes */
+  i = !important
   .IssueLabel, .Counter {
     border-radius: general-border-radius;
   }
@@ -25,14 +26,14 @@
 	.sidebar-progress-bar .progress-bar {
     border-radius: pb-border-radius;
   }
-  .user-bar {
+  .user-bar, html .blob-filter {
     border-radius: 0;
   }
   .AvatarStack-body .avatar, .avatar {
     border-radius: avatar-border-radius;
   }
   .avatar-user {
-    border-radius: avatar-border-radius !important;
+    border-radius: avatar-border-radius i;
   }
   .btn, .delete-topic-button, .clone-url-button:first-child .clone-url-link {
     border-radius: button-border-radius;
@@ -76,6 +77,11 @@
     border-top-left-radius: general-border-radius;
     border-top-right-radius: general-border-radius;
   }
+  .Box-body:last-of-type {
+    margin-bottom: -1px;
+    border-bottom-right-radius: general-border-radius;
+    border-bottom-left-radius: general-border-radius;
+  }
   .header-search-current .jump-to-suggestions {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -89,6 +95,12 @@
   .BtnGroup-parent .BtnGroup-item {
     border-right-width: 0;
     border-radius: 0;
+  }
+  .topic-tag-action .add-topic-button {
+    border-radius: 0
+  }
+  .topic-tag-action .remove-topic-button {
+    border-radius: 0 general-border-radius general-border-radius 0
   }
   .form-control, .form-select, .filter-item, .state, .State, .label,
   .Label, .reaction-sort-item, .suggester, .suggester li:first-child,
@@ -106,7 +118,9 @@
   .form-group.successed .error, .form-group.successed .success, .form-group.successed .warning,
   .form-group.warn .error, .form-group.warn .success, .form-group.warn .warning,
   .full-commit, .compare-pr-placeholder, .markdown-body .highlight pre, .markdown-body pre,
-  .review-comment .reaction-summary-item:not(.add-reaction-btn), .card {
+  .review-comment .reaction-summary-item:not(.add-reaction-btn), .card,
+  .user-list li .actions .status-modified, .copyable-terminal, .integrations-select-repos,
+  .review-comment:target, .oauth-permissions-details .permission-summary em.highlight {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
@@ -116,7 +130,7 @@
     border-radius: general-border-radius general-border-radius 0 0;
   }
   .discussion-topic-header, .previewable-comment-form .tabnav {
-    border-radius: general-border-radius general-border-radius 0 0 !important;
+    border-radius: general-border-radius general-border-radius 0 0 i;
   }
   .select-menu-item.last-visible, .select-menu-list:last-child .select-menu-item:last-child {
     border-radius: 0 0 general-border-radius general-border-radius;
@@ -132,16 +146,16 @@
     border-bottom-left-radius: general-border-radius;
   }
   .rounded-1, .rounded-2, .profile-rollup-content .rounded-1 {
-    border-radius: general-border-radius !important;
+    border-radius: general-border-radius i;
   }
   .comment-reactions-options .reaction-summary-item:first-child {
     border-bottom-left-radius: general-border-radius;
   }
   .rounded-bottom-1, .rounded-left-1 {
-    border-bottom-left-radius: general-border-radius !important;
+    border-bottom-left-radius: general-border-radius i;
   }
   .rounded-left-1 {
-    border-top-left-radius: general-border-radius !important;
+    border-top-left-radius: general-border-radius i;
   }
   .container-preview .tabnav-tabs > .selected:first-child {
     border-top-left-radius: general-border-radius;
