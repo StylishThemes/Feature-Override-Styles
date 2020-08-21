@@ -16,7 +16,9 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((gist|guides|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
   /* contribution calendar */
+  /* stylelint-disable */
   i = !important
+  /* stylelint-enable */
   body .calendar-graph rect[fill="#216e39"],
   body .calendar-graph rect[fill="#9be9a8"],
   body .calendar-graph rect[fill="#40c463"],

@@ -26,7 +26,9 @@
   .blob-code sets the color of the rest of the line
   .blob-code .x sets the word-diff highlight color
   ***/
+  /* stylelint-disable */
   i = !important
+  /* stylelint-enable */
   .highlight .blob-num-deletion,
   .highlight .blob-code-deletion .x {
     background-color: deleted-line i;

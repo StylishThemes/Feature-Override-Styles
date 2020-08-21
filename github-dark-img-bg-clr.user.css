@@ -15,7 +15,9 @@
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document regexp("^https?://((education|gist|guides|help|lab|launch-editor|raw|resources|status|developer|support)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"), domain("www.githubstatus.com") {
+  /* stylelint-disable */
   i = !important
+  /* stylelint-enable */
   if not bgclrhack {
     .comment-body.markdown-body img[data-canonical-src*="svg"],
     .comment-body.markdown-body img.emoji,

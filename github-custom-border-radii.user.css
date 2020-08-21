@@ -19,7 +19,9 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
   /* Revert New Design Changes */
+  /* stylelint-disable */
   i = !important
+  /* stylelint-enable */
   .IssueLabel, .Counter {
     border-radius: general-border-radius;
   }
