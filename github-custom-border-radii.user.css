@@ -18,8 +18,8 @@
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
-  i = !important
   /* Revert New Design Changes */
+  i = !important
   .IssueLabel, .Counter {
     border-radius: general-border-radius;
   }
@@ -81,6 +81,10 @@
   }
   .Box-body:last-of-type {
     margin-bottom: -1px;
+    border-bottom-right-radius: general-border-radius;
+    border-bottom-left-radius: general-border-radius;
+  }
+  .full-commit .commit-meta {
     border-bottom-right-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
