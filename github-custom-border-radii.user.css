@@ -103,10 +103,10 @@
     border-radius: 0;
   }
   .topic-tag-action .add-topic-button {
-    border-radius: 0
+    border-radius: 0;
   }
   .topic-tag-action .remove-topic-button {
-    border-radius: 0 general-border-radius general-border-radius 0
+    border-radius: 0 general-border-radius general-border-radius 0;
   }
   .form-control, .form-select, .filter-item, .state, .State, .label,
   .Label, .reaction-sort-item, .suggester, .suggester li:first-child,

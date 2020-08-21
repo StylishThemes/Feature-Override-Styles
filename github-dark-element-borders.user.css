@@ -18,7 +18,7 @@
                domain("www.githubstatus.com") {
 
   /* hack to show style in popup when checkbox is disabled */
-  stylus-fix { content: 'true' }
+  stylus-fix { content: "true" }
   i = !important
 
   if ( enableBorders == 0 ) {
