@@ -19,14 +19,12 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
   /* Revert New Design Changes */
-  /* stylelint-disable */
   i = !important
-  /* stylelint-enable */
   .IssueLabel, .Counter {
     border-radius: general-border-radius;
   }
   .Progress, .profile-rollup-wrapper .progress-bar, .progress-bar,
-  .sidebar-progress-bar .progress-bar {
+	.sidebar-progress-bar .progress-bar {
     border-radius: pb-border-radius;
   }
   .user-bar, html .blob-filter {
@@ -35,7 +33,7 @@
   .AvatarStack-body .avatar, .avatar {
     border-radius: avatar-border-radius;
   }
-  .avatar-user, image-crop .handle::before {
+  .avatar-user, image-crop.image-crop-user .crop-box {
     border-radius: avatar-border-radius i;
   }
   .btn, .delete-topic-button, .clone-url-button:first-child .clone-url-link {
@@ -77,7 +75,7 @@
   }
   .Box-row:first-of-type, .Box-header, .SelectMenu-tab, .graph-before-activity-overview,
   .file-header, .timeline-comment-header, .uploaded-files.not-populated + .drop-target .drop-target-label,
-  .pagination-loader-container button.bg-white.border-0 {
+  .Box--overlay .Box-header {
     border-top-left-radius: general-border-radius;
     border-top-right-radius: general-border-radius;
   }
@@ -86,10 +84,10 @@
     border-bottom-right-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
-  .full-commit .commit-meta {
+	.full-commit .commit-meta {
     border-bottom-right-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
-  }
+	}
   .header-search-current .jump-to-suggestions {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -128,10 +126,8 @@
   .full-commit, .compare-pr-placeholder, .markdown-body .highlight pre, .markdown-body pre,
   .review-comment .reaction-summary-item:not(.add-reaction-btn), .card,
   .user-list li .actions .status-modified, .copyable-terminal, .integrations-select-repos,
-  .review-comment:target, .oauth-permissions-details .permission-summary em.highlight,
-  .inline-comment-form, .stale-files-tab,
-  .card-filter-autocomplete-dropdown .navigation-focus,
-  .card-filter-autocomplete-dropdown [aria-selected=true] {
+  .review-comment:target, .oauth-permissions-details .permission-summary em.highlight, .range-editor,
+  image-crop .handle::before {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
@@ -161,15 +157,6 @@
   }
   .comment-reactions-options .reaction-summary-item:first-child {
     border-bottom-left-radius: general-border-radius;
-  }
-  .rounded-top-1{
-    border-top-left-radius: general-border-radius i;
-  }
-  .rounded-right-1, .rounded-top-1{
-    border-top-right-radius: general-border-radius i;
-  }
-  .rounded-bottom-1,.rounded-right-1 {
-    border-bottom-right-radius: general-border-radius i;
   }
   .rounded-bottom-1, .rounded-left-1 {
     border-bottom-left-radius: general-border-radius i;
