@@ -20,11 +20,19 @@
 @-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
   /* Revert New Design Changes */
   i = !important
+  /* tweak GHD opinionated radius */
+  .js-diff-load-container, .file .data.empty {
+    border-radius: 0 0 general-border-radius general-border-radius i;
+  }
+  .branch-a-b-count .bar-behind, .branch-a-b-count .bar-behind .meter {
+    border-radius: 0 general-border-radius general-border-radius 0
+  }
+  /* end */
   .IssueLabel, .Counter {
     border-radius: general-border-radius;
   }
   .Progress, .profile-rollup-wrapper .progress-bar, .progress-bar,
-	.sidebar-progress-bar .progress-bar {
+  .sidebar-progress-bar .progress-bar {
     border-radius: pb-border-radius;
   }
   .user-bar, html .blob-filter {
@@ -36,7 +44,7 @@
   .avatar-user, image-crop.image-crop-user .crop-box {
     border-radius: avatar-border-radius i;
   }
-  .btn, .delete-topic-button, .clone-url-button:first-child .clone-url-link {
+  .btn, .delete-topic-button, .delete-topic-link, .clone-url-button:first-child .clone-url-link {
     border-radius: button-border-radius;
     box-shadow: none;
   }
@@ -84,10 +92,10 @@
     border-bottom-right-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
-	.full-commit .commit-meta {
+  .full-commit .commit-meta {
     border-bottom-right-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
-	}
+  }
   .header-search-current .jump-to-suggestions {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -127,7 +135,8 @@
   .review-comment .reaction-summary-item:not(.add-reaction-btn), .card,
   .user-list li .actions .status-modified, .copyable-terminal, .integrations-select-repos,
   .review-comment:target, .oauth-permissions-details .permission-summary em.highlight, .range-editor,
-  image-crop .handle::before {
+  image-crop .handle::before, .session-authentication .auth-form-body, .listgroup, .user-key-email, .user-key-badge,
+ .inline-comment-form {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
