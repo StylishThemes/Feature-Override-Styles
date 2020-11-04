@@ -1,0 +1,161 @@
+/* ==UserStyle==
+@name         StackOverflow Syntax Themes
+@version      1.0.17
+@description  A Syntax theme switcher for StackOverflow and associated sites
+@namespace    StylishThemes
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Feature-Override-Styles
+@supportURL   https://github.com/StylishThemes/Feature-Override-Styles/issues/new/choose
+@updateURL    https://github.com/StylishThemes/Feature-Override-Styles/stackoverflow-syntax-themes.user.css
+@license      MIT
+
+@var select syntaxTheme "Choose syntax theme" [
+	"Ambiance",
+	"Twilight",
+	"Custom"
+]
+@var color highlight-bg          "Highlight background"  #000c18
+@var color highlight-color       "Highlight color"       #A5A2A2
+@var color highlight-comment     "Highlight comment"     #5C5855
+@var color highlight-punctuation "Highlight punctuation" #B5E4F4
+@var color highlight-namespace   "Highlight namespace"   #E8BBD0
+@var color highlight-attribute   "Highlight attribute"   #01A0E4
+@var color highlight-literal     "Highlight literal"     #CDAB53
+@var color highlight-variable    "Highlight variable"    #FDED02
+@var color highlight-addition    "Highlight addition"    #01A252
+@var color highlight-deletion    "Highlight deletion"    #DB2D20
+
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"),
+regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*"),
+regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*"),
+domain("serverfault.com"),
+domain("superuser.com"),
+domain("stackapps.com"),
+domain("mathoverflow.net"),
+domain("askubuntu.com") {
+
+  :root {
+    if syntaxTheme == "Ambiance" {
+      body, .theme-light__forced, body.theme-system {
+        --highlight-bg: #202020;
+        --highlight-color: #e6e1dc;
+        --highlight-comment: #555;
+        --highlight-punctuation: #ffb795;
+        --highlight-namespace: #eed1b3;
+        --highlight-attribute: #9b859d;
+        --highlight-literal: #b5ab9c;
+        --highlight-symbol: #f07746;
+        --highlight-keyword: #cf7ea9;
+        --highlight-variable: #eed1b3;
+        --highlight-addition: #4e9a06;
+        --highlight-deletion: #df382c;
+      }
+      .s-prose :not(.s-code-block) > code {
+        color: var(--highlight-color);
+        background-color: var(--highlight-bg);
+      }
+      code, .full-diff {
+        background-color: var(--highlight-bg);
+      }
+      span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
+        background-color: var(--highlight-deletion);
+        color: lighten(#df382c, 60%);
+      }
+      #revisions .markdown-diff .full-diff .deleted > div {
+        background-color: darken(#df382c, 50%);
+      }
+      #revisions .markdown-diff .full-diff .inserted > div {
+        background-color: darken(#4e9a06, 60%);
+      }
+      .full-diff .inserted > div, span.diff-add {
+        background-color: var(--highlight-addition);
+      }
+      span.diff-add {
+        background-color: var(--highlight-addition);
+        color: darken(#4e9a06, 50%);
+      }
+    }
+    else if syntaxTheme == "Twilight" {
+      body, .theme-light__forced, body.theme-system {
+        --highlight-bg: #141414;
+        --highlight-color: #f8f8f8;
+        --highlight-comment: #5F5A60;
+        --highlight-punctuation: #DDF2A4;
+        --highlight-namespace: #CF6A4C;
+        --highlight-attribute: #8F9D6A;
+        --highlight-literal: #CA7840;
+        --highlight-symbol: #562D56;
+        --highlight-keyword: #CDA869;
+        --highlight-variable: #7587A6;
+        --highlight-addition: #253B22;
+        --highlight-deletion: #420E09;
+      }
+      .s-prose :not(.s-code-block) > code {
+        color: var(--highlight-color);
+        background-color: var(--highlight-bg);
+      }
+      code, .full-diff {
+        background-color: var(--highlight-bg);
+      }
+      span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
+        background-color: var(--highlight-deletion);
+        color: lighten(#420E09, 60%);
+      }
+      #revisions .markdown-diff .full-diff .deleted > div {
+        background-color: darken(#420E09, 50%);
+      }
+      #revisions .markdown-diff .full-diff .inserted > div {
+        background-color: darken(#253B22, 50%);
+      }
+      .full-diff .inserted > div, span.diff-add {
+        background-color: var(--highlight-addition);
+      }
+      span.diff-add {
+        background-color: var(--highlight-addition);
+        color: lighten(#8F9D6A, 20%);
+      }
+    }
+    else if syntaxTheme == "Custom" {
+      body, .theme-light__forced, body.theme-system {
+        --highlight-bg: highlight-bg;
+        --highlight-color: highlight-color;
+        --highlight-comment: highlight-comment;
+        --highlight-punctuation: highlight-punctuation;
+        --highlight-namespace: highlight-namespace;
+        --highlight-attribute: highlight-attribute;
+        --highlight-literal: highlight-literal;
+        --highlight-symbol: highlight-symbol;
+        --highlight-keyword: highlight-keyword;
+        --highlight-variable: highlight-variable;
+        --highlight-addition: highlight-addition;
+        --highlight-deletion: highlight-deletion;
+      }
+      .s-prose :not(.s-code-block) > code {
+        color: var(--highlight-color);
+        background-color: var(--highlight-bg);
+      }
+      code, .full-diff {
+        background-color: var(--highlight-bg);
+      }
+      span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
+        background-color: var(--highlight-deletion);
+        color: lighten(highlight-deletion, 60%);
+      }
+      #revisions .markdown-diff .full-diff .deleted > div {
+        background-color: darken(highlight-deletion, 50%);
+      }
+      #revisions .markdown-diff .full-diff .inserted > div {
+        background-color: darken(highlight-addition, 50%);
+      }
+      .full-diff .inserted > div, span.diff-add {
+        background-color: var(--highlight-addition);
+      }
+      span.diff-add {
+        background-color: darken(highlight-addition, 30%);
+        color: lighten(highlight-color, 20%);
+      }
+    }
+  }
+}
