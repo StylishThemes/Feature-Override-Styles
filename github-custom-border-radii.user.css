@@ -25,7 +25,7 @@
     border-radius: 0 0 general-border-radius general-border-radius i;
   }
   .branch-a-b-count .bar-behind, .branch-a-b-count .bar-behind .meter {
-    border-radius: 0 general-border-radius general-border-radius 0
+    border-radius: 0 general-border-radius general-border-radius 0;
   }
   /* end */
   .IssueLabel, .Counter {
