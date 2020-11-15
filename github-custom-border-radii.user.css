@@ -136,13 +136,13 @@
   .user-list li .actions .status-modified, .copyable-terminal, .integrations-select-repos,
   .review-comment:target, .oauth-permissions-details .permission-summary em.highlight, .range-editor,
   image-crop .handle::before, .session-authentication .auth-form-body, .listgroup, .user-key-email, .user-key-badge,
- .inline-comment-form {
+ .inline-comment-form, .add-markdown-comment, .highlight, #search-results, code, pre {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
   .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current="false"]),
   .tabnav-tab[aria-selected="true"], .select-menu-tabs .select-menu-tab-nav, .select-menu-tabs a,
-  .table-list-header {
+  .table-list-header, .oauth-org-access-details .oauth-org-item:first-child {
     border-radius: general-border-radius general-border-radius 0 0;
   }
   .discussion-topic-header, .previewable-comment-form .tabnav {
