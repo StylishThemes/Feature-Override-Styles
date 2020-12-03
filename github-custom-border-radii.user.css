@@ -31,6 +31,9 @@
   .IssueLabel, .Counter {
     border-radius: general-border-radius;
   }
+  .gist-quicksearch-results .gist-quicksearch-result-header:first-child {
+    border-top-left-radius: general-border-radius;
+  }
   .Progress, .profile-rollup-wrapper .progress-bar, .progress-bar,
   .sidebar-progress-bar .progress-bar {
     border-radius: pb-border-radius;
