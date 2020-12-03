@@ -139,7 +139,7 @@
   .user-list li .actions .status-modified, .copyable-terminal, .integrations-select-repos,
   .review-comment:target, .oauth-permissions-details .permission-summary em.highlight, .range-editor,
   image-crop .handle::before, .session-authentication .auth-form-body, .listgroup, .user-key-email, .user-key-badge,
- .inline-comment-form, .add-markdown-comment, .highlight, #search-results, code, pre {
+ .inline-comment-form, .add-markdown-comment, .highlight, #search-results, code, pre, .saved-reply-form {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
