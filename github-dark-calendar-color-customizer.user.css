@@ -9,28 +9,21 @@
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-calendar-color-customizer.user.css
 @license      MIT
 
-@var color base-color "Base color" #7bc96f
-@var text  brightness "Brightness" 100%
+@var color base-color "Regular color" #7bc96f
+@var color  halloween  "Halloween color" #ffee4a
 
 @preprocessor stylus
 ==/UserStyle== */
-@-moz-document regexp("^https?://((gist|guides|lab|launch-editor|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
+@-moz-document regexp("^https?://?github\\.com/((?!generated_pages/preview).)*$") {
   /* contribution calendar */
-  /* stylelint-disable */
-  i = !important
-  /* stylelint-enable */
-  body .calendar-graph rect[fill="#216e39"],
-  body .calendar-graph rect[fill="#9be9a8"],
-  body .calendar-graph rect[fill="#40c463"],
-  body .calendar-graph rect[fill="#30a14e"],
-  body .contrib-legend .legend li[style],
-  body .contribution-activity-listing .progress-bar[style*="background-color"] {
-    background-color: base-color i;
-    fill: base-color i;
-    filter: brightness(brightness) i;
-  }
-  body .contrib-legend .legend li[style*="#ebedf0"] {
-    background-color: #282828 i;
-    fill: #282828 i;
+  :root {
+    --color-calendar-graph-day-L1-bg: darken(base-color, 70%) //#9be9a8;
+    --color-calendar-graph-day-L2-bg: darken(base-color, 50%) //#40c463;
+    --color-calendar-graph-day-L3-bg: darken(base-color, 20%)//#30a14e;
+    --color-calendar-graph-day-L4-bg: base-color //#216e39;
+    --color-calendar-halloween-graph-day-L1-bg: darken(halloween, 70%) //#ffee4a;
+    --color-calendar-halloween-graph-day-L2-bg: darken(halloween, 50%) //#ffc501;
+    --color-calendar-halloween-graph-day-L3-bg: darken(halloween, 20%) //#fe9600;
+    --color-calendar-halloween-graph-day-L4-bg: halloween //#03001c;
   }
 }
