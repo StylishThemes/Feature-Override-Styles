@@ -140,7 +140,7 @@
   .review-comment:target, .oauth-permissions-details .permission-summary em.highlight, .range-editor,
   image-crop .handle::before, .session-authentication .auth-form-body, .listgroup, .user-key-email, .user-key-badge,
  .inline-comment-form, .add-markdown-comment, .highlight, #search-results, code, pre, .saved-reply-form,
- .review-comment .is-comment-editing {
+ .review-comment .is-comment-editing, .ScreenshotCarousel, .markdown-body table code {
     border-radius: general-border-radius;
   }
   .boxed-group .heading, .boxed-group > h3,
@@ -152,7 +152,8 @@
   .discussion-topic-header, .previewable-comment-form .tabnav {
     border-radius: general-border-radius general-border-radius 0 0 i;
   }
-  .select-menu-item.last-visible, .select-menu-list:last-child .select-menu-item:last-child {
+  .select-menu-item.last-visible, .select-menu-list:last-child .select-menu-item:last-child,
+  .review-thread-reply {
     border-radius: 0 0 general-border-radius general-border-radius;
   }
   .Box--responsive .Box-header {
@@ -179,6 +180,10 @@
   }
   .container-preview .tabnav-tabs > .selected:first-child {
     border-top-left-radius: general-border-radius;
+  }
+  .rounded-top-2, .rounded-md-top-1 {
+    border-top-left-radius: general-border-radius i
+    border-top-right-radius: general-border-radius i
   }
   /* pull user status down and align else default values */
   if align-user-status {
