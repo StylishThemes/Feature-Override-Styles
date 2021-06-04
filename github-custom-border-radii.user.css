@@ -47,7 +47,9 @@
   .avatar-user, image-crop.image-crop-user .crop-box {
     border-radius: avatar-border-radius i;
   }
-  .btn, .delete-topic-button, .delete-topic-link, .clone-url-button:first-child .clone-url-link {
+  .btn, .delete-topic-button, .delete-topic-link,
+  .clone-url-button:first-child .clone-url-link, .rounded-pill,
+  .btn-mktg-fluid {
     border-radius: button-border-radius;
     box-shadow: none;
   }
@@ -123,7 +125,7 @@
   .Label, .reaction-sort-item, .suggester, .suggester li:first-child,
   .suggester li:last-child, .delete-topic-button, .topic-tag, .topic-tag-action, .ColorSwatch,
   .label-select-menu .color, kbd, .SelectMenu-modal, .IssueLabel--big.lh-condensed, .menu, .Box,
-  .flash, .boxed-group, .boxed-group-inner, .user-status-circle-badge, .timeline-comment-label,
+  .flash, .boxed-group, .user-status-circle-badge, .timeline-comment-label,
   .signed-commit-badge-large, .signed-commit-badge-medium, .signed-commit-badge-small,
   .timeline-comment, .thread-subscription-status, .markdown-body code, .markdown-body tt,
   .ajax-pagination-form .ajax-pagination-btn, .issues-reset-query-icon, .dropdown-menu,
@@ -138,11 +140,18 @@
   .review-comment .reaction-summary-item:not(.add-reaction-btn), .card,
   .user-list li .actions .status-modified, .copyable-terminal, .integrations-select-repos,
   .review-comment:target, .oauth-permissions-details .permission-summary em.highlight, .range-editor,
-  image-crop .handle::before, .session-authentication .auth-form-body, .listgroup, .user-key-email, .user-key-badge,
- .inline-comment-form, .add-markdown-comment, .highlight, #search-results, code, pre, .saved-reply-form,
- .review-comment .is-comment-editing, .ScreenshotCarousel, .markdown-body table code {
+  image-crop .handle::before, .session-authentication .auth-form-body, .listgroup, .user-key-email,
+  .user-key-badge, .inline-comment-form, .add-markdown-comment, .highlight, #search-results, code, pre,
+  .saved-reply-form, .review-comment .is-comment-editing, .ScreenshotCarousel,.markdown-body table code,
+  .svg-tip, .code-list .file-box, .session-authentication .flash, .markdown-title code {
     border-radius: general-border-radius;
   }
+  // docs actions guides consistency https://docs.github.com/en/actions/guides
+  .border-white[role="button"] { border-radius: button-border-radius }
+  select.form-select {
+    border-radius: general-border-radius i;
+  }
+  // end docs actions guides
   .boxed-group .heading, .boxed-group > h3,
   .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current="false"]),
   .tabnav-tab[aria-selected="true"], .select-menu-tabs .select-menu-tab-nav, .select-menu-tabs a,
@@ -162,18 +171,25 @@
     border-top-left-radius: general-border-radius;
     border-top-right-radius: general-border-radius;
   }
-  .Box-row:last-of-type, .drag-and-drop {
+  .Box-row:last-of-type, .drag-and-drop, .boxed-group-inner {
     border-bottom-right-radius: general-border-radius;
     border-bottom-left-radius: general-border-radius;
   }
-  .rounded, .rounded-1, .rounded-2, .profile-rollup-content .rounded-1 {
+  .rounded, .rounded-1, .rounded-2, .profile-rollup-content .rounded-1, .rounded-3 {
     border-radius: general-border-radius i;
+  }
+  .Progress .rounded-2 {
+    border-radius: avatar-border-radius i;
   }
   .comment-reactions-options .reaction-summary-item:first-child {
     border-bottom-left-radius: general-border-radius;
   }
   .rounded-bottom-1, .rounded-left-1 {
     border-bottom-left-radius: general-border-radius i;
+    border-bottom-right-radius: general-border-radius i;
+  }
+  .WorkflowCard-heading::after {
+    border-bottom-left-radius: general-border-radius;
   }
   .rounded-left-1 {
     border-top-left-radius: general-border-radius i;
@@ -182,8 +198,14 @@
     border-top-left-radius: general-border-radius;
   }
   .rounded-top-2, .rounded-md-top-1 {
-    border-top-left-radius: general-border-radius i
-    border-top-right-radius: general-border-radius i
+    border-top-left-radius: general-border-radius i;
+    border-top-right-radius: general-border-radius i;
+  }
+  .rounded-right-1, .rounded-top-1 {
+	  border-top-right-radius: general-border-radius i;
+  }
+  .rounded-top-1 {
+	  border-top-left-radius: general-border-radius i;
   }
   /* pull user status down and align else default values */
   if align-user-status {
