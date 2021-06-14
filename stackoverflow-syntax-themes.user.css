@@ -35,11 +35,11 @@ domain("superuser.com"),
 domain("stackapps.com"),
 domain("mathoverflow.net"),
 domain("askubuntu.com") {
-
+// teststststs ddsd
   :root {
     if syntaxTheme == "Ambiance" {
       body, .theme-light__forced, body.theme-system {
-        --highlight-bg: #202020;
+        --highlight-bg: #202020 !important;
         --highlight-color: #e6e1dc;
         --highlight-comment: #555;
         --highlight-punctuation: #ffb795;
@@ -52,9 +52,10 @@ domain("askubuntu.com") {
         --highlight-addition: #4e9a06;
         --highlight-deletion: #df382c;
       }
-      .s-prose :not(.s-code-block) > code {
+      .s-prose :not(.s-code-block) > code,
+      pre[class*="lang"] {
         color: var(--highlight-color);
-        background-color: var(--highlight-bg);
+        background-color: var(--highlight-bg) !important;
       }
       code, .full-diff {
         background-color: var(--highlight-bg);
@@ -79,22 +80,23 @@ domain("askubuntu.com") {
     }
     else if syntaxTheme == "Twilight" {
       body, .theme-light__forced, body.theme-system {
-        --highlight-bg: #141414;
-        --highlight-color: #f8f8f8;
-        --highlight-comment: #5F5A60;
-        --highlight-punctuation: #DDF2A4;
-        --highlight-namespace: #CF6A4C;
-        --highlight-attribute: #8F9D6A;
+        --highlight-bg: #141414 !important;
+        --highlight-color: #f7f7f7;
+        --highlight-comment: #777;
+        --highlight-punctuation: #ddf2a4;
+        --highlight-namespace: #fc0;
+        --highlight-attribute: #d6bb6d;
         --highlight-literal: #CA7840;
-        --highlight-symbol: #562D56;
-        --highlight-keyword: #CDA869;
-        --highlight-variable: #7587A6;
+        --highlight-symbol: #f7f7f7;
+        --highlight-keyword: #f9ee98;
+        --highlight-variable: #7587a6;
         --highlight-addition: #253B22;
         --highlight-deletion: #420E09;
       }
-      .s-prose :not(.s-code-block) > code {
+      .s-prose :not(.s-code-block) > code,
+      pre[class*="lang"] {
         color: var(--highlight-color);
-        background-color: var(--highlight-bg);
+        background-color: var(--highlight-bg) !important;
       }
       code, .full-diff {
         background-color: var(--highlight-bg);
@@ -119,7 +121,7 @@ domain("askubuntu.com") {
     }
     else if syntaxTheme == "Custom" {
       body, .theme-light__forced, body.theme-system {
-        --highlight-bg: highlight-bg;
+        --highlight-bg: highlight-bg  !important;
         --highlight-color: highlight-color;
         --highlight-comment: highlight-comment;
         --highlight-punctuation: highlight-punctuation;
@@ -132,9 +134,10 @@ domain("askubuntu.com") {
         --highlight-addition: highlight-addition;
         --highlight-deletion: highlight-deletion;
       }
-      .s-prose :not(.s-code-block) > code {
+      .s-prose :not(.s-code-block) > code,
+      pre[class*="lang"] {
         color: var(--highlight-color);
-        background-color: var(--highlight-bg);
+        background-color: var(--highlight-bg) !important;
       }
       code, .full-diff {
         background-color: var(--highlight-bg);
