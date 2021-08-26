@@ -208,10 +208,10 @@
     border-top-right-radius: general-border-radius i;
   }
   .rounded-right-1, .rounded-top-1 {
-	  border-top-right-radius: general-border-radius i;
+    border-top-right-radius: general-border-radius i;
   }
   .rounded-top-1 {
-	  border-top-left-radius: general-border-radius i;
+    border-top-left-radius: general-border-radius i;
   }
   /* pull user status down and align else default values */
   if align-user-status {
