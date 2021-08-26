@@ -17,7 +17,7 @@
 
 @preprocessor stylus
 ==/UserStyle== */
-@-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
+@-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("media.githubusercontent.com"), domain("www.githubstatus.com") {
   /* Revert New Design Changes */
   i = !important
   /* tweak GHD opinionated radius */
@@ -143,12 +143,18 @@
   image-crop .handle::before, .session-authentication .auth-form-body, .listgroup, .user-key-email,
   .user-key-badge, .inline-comment-form, .add-markdown-comment, .highlight, #search-results, code, pre,
   .saved-reply-form, .review-comment .is-comment-editing, .ScreenshotCarousel,.markdown-body table code,
-  .svg-tip, .code-list .file-box, .session-authentication .flash, .markdown-title code {
+  .svg-tip, .code-list .file-box, .session-authentication .flash, .markdown-title code,
+  .file:not(.open) .file-header.file-header--expandable {
     border-radius: general-border-radius;
   }
   // docs actions guides consistency https://docs.github.com/en/actions/guides
-  .border-white[role="button"] { border-radius: button-border-radius }
-  select.form-select {
+  .border-white[role="button" i] { border-radius: button-border-radius }
+  select.form-select, tracked-issues-progress [style*="border-radius: 40px" i],
+  button[style*="border-radius:100px" i], .avatar.circle {
+    border-radius: general-border-radius i;
+  }
+  // export logs
+  input[id="start-time"], input[id="stop-time"] {
     border-radius: general-border-radius i;
   }
   // end docs actions guides
