@@ -18,8 +18,8 @@
   "devDependencies": {
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "updates": "^12.1.0",
-    "versions": "^8.4.7"
+    "updates": "^12.2.1",
+    "versions": "^9.0.1"
   },
   "scripts": {
     "patch": "versions -p -C patch *.user.css",
