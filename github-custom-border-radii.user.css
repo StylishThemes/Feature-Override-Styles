@@ -17,7 +17,8 @@
 
 @preprocessor stylus
 ==/UserStyle== */
-@-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("media.githubusercontent.com"), domain("www.githubstatus.com") {
+@-moz-document regexp("^https?://((education|gist|graphql|guides|docs|raw|resources|status|developer|support|vscode-auth)\\.)?github\\.com/((?!generated_pages/preview).)*$"),
+/*-----------*/regexp('https?://avatars.githubusercontent\.com(/.*)?'), domain("media.githubusercontent.com"), domain("www.githubstatus.com") {
   /* Revert New Design Changes */
   i = !important
   /* tweak GHD opinionated radius */
@@ -44,7 +45,8 @@
   .AvatarStack-body .avatar, .avatar {
     border-radius: avatar-border-radius;
   }
-  .avatar-user, image-crop.image-crop-user .crop-box {
+  .rounded-1 .avatar-user, .rounded-1 a[data-octo-dimensions="link_type:profile"],
+  .avatar.circle, .avatar, .avatar-user {
     border-radius: avatar-border-radius i;
   }
   .btn, .delete-topic-button, .delete-topic-link,
@@ -148,9 +150,9 @@
     border-radius: general-border-radius;
   }
   // docs actions guides consistency https://docs.github.com/en/actions/guides
-  .border-white[role="button" i] { border-radius: button-border-radius }
+  .border-white[role="button" i], .stale-files-tab { border-radius: button-border-radius }
   select.form-select, tracked-issues-progress [style*="border-radius: 40px" i],
-  button[style*="border-radius:100px" i], .avatar.circle {
+  button[style*="border-radius:100px" i] {
     border-radius: general-border-radius i;
   }
   // export logs
@@ -208,10 +210,10 @@
     border-top-right-radius: general-border-radius i;
   }
   .rounded-right-1, .rounded-top-1 {
-    border-top-right-radius: general-border-radius i;
+	  border-top-right-radius: general-border-radius i;
   }
   .rounded-top-1 {
-    border-top-left-radius: general-border-radius i;
+	  border-top-left-radius: general-border-radius i;
   }
   /* pull user status down and align else default values */
   if align-user-status {
