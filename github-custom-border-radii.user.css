@@ -13,6 +13,7 @@
 @var text     avatar-border-radius  "Avatar border radius"        2px
 @var text     button-border-radius  "Button border radius"        .25em
 @var text     pb-border-radius      "Progress bar border radius"  2px
+@var text     color-border-radius   "Color swatch border radius"  15%
 @var checkbox align-user-status     "User status below avatar"    1
 
 @preprocessor stylus
@@ -146,7 +147,8 @@
   .user-key-badge, .inline-comment-form, .add-markdown-comment, .highlight, #search-results, code, pre,
   .saved-reply-form, .review-comment .is-comment-editing, .ScreenshotCarousel,.markdown-body table code,
   .svg-tip, .code-list .file-box, .session-authentication .flash, .markdown-title code,
-  .file:not(.open) .file-header.file-header--expandable {
+  .file:not(.open) .file-header.file-header--expandable, .pricing-dark-container, .hx_kbd,
+  [data-target='command-palette-item.hintText'] {
     border-radius: general-border-radius;
   }
   // docs actions guides consistency https://docs.github.com/en/actions/guides
@@ -154,6 +156,9 @@
   select.form-select, tracked-issues-progress [style*="border-radius: 40px" i],
   button[style*="border-radius:100px" i] {
     border-radius: general-border-radius i;
+  }
+  code span.circle {
+    border-radius: color-border-radius i;
   }
   // export logs
   input[id="start-time"], input[id="stop-time"] {
@@ -192,7 +197,7 @@
   .comment-reactions-options .reaction-summary-item:first-child {
     border-bottom-left-radius: general-border-radius;
   }
-  .rounded-bottom-1, .rounded-left-1 {
+  .rounded-bottom-1, .rounded-bottom-2, .rounded-left-1 {
     border-bottom-left-radius: general-border-radius i;
     border-bottom-right-radius: general-border-radius i;
   }
