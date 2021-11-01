@@ -16,10 +16,10 @@
     "url": "https://github.com/StylishThemes/Feature-Override-Styles/issues"
   },
   "devDependencies": {
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0",
-    "updates": "^12.2.1",
-    "versions": "^9.0.1"
+    "stylelint": "^14.0.1",
+    "stylelint-config-standard": "^23.0.0",
+    "updates": "^12.2.2",
+    "versions": "^9.1.0"
   },
   "scripts": {
     "patch": "versions -p -C patch *.user.css",
