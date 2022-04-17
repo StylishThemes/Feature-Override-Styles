@@ -27,6 +27,7 @@
 
 @preprocessor stylus
 ==/UserStyle== */
+i = !important
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"),
 regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*"),
 regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*"),
@@ -38,126 +39,139 @@ domain("askubuntu.com") {
 // teststststs ddsd
   :root {
     if syntaxTheme == "Ambiance" {
-      body, .theme-light__forced, body.theme-system {
-        --highlight-bg: #202020 !important;
-        --highlight-color: #e6e1dc;
-        --highlight-comment: #555;
-        --highlight-punctuation: #ffb795;
-        --highlight-namespace: #eed1b3;
-        --highlight-attribute: #9b859d;
-        --highlight-literal: #b5ab9c;
-        --highlight-symbol: #f07746;
-        --highlight-keyword: #cf7ea9;
-        --highlight-variable: #eed1b3;
-        --highlight-addition: #4e9a06;
-        --highlight-deletion: #df382c;
+      body, .theme-light__forced, body.theme-system,
+      :root code, :root .full-diff {
+        --highlight-bg: #202020 i
+        --highlight-color: #e6e1dc i
+        --highlight-comment: #555 i
+        --highlight-punctuation: #ffb795 i
+        --highlight-namespace: #eed1b3 i
+        --highlight-attribute: #9b859d i
+        --highlight-literal: #b5ab9c i
+        --highlight-symbol: #f07746 i
+        --highlight-keyword: #cf7ea9 i
+        --highlight-variable: #eed1b3  i
+        --highlight-addition: #4e9a06 i
+        --highlight-deletion: #df382c i
       }
       .s-prose :not(.s-code-block) > code,
       pre[class*="lang"] {
-        color: var(--highlight-color);
-        background-color: var(--highlight-bg) !important;
+        color: var(--highlight-color)
+        background-color: var(--highlight-bg) i
       }
       code, .full-diff {
-        background-color: var(--highlight-bg);
+        background-color: var(--highlight-bg)
+      }
+      .comment-text code {
+        color: var(--highlight-color)
       }
       span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
-        background-color: var(--highlight-deletion);
-        color: lighten(#df382c, 60%);
+        background-color: var(--highlight-deletion)
+        color: lighten(#df382c, 60%)
       }
       #revisions .markdown-diff .full-diff .deleted > div {
-        background-color: darken(#df382c, 50%);
+        background-color: darken(#df382c, 50%)
       }
       #revisions .markdown-diff .full-diff .inserted > div {
-        background-color: darken(#4e9a06, 60%);
+        background-color: darken(#4e9a06, 60%)
       }
       .full-diff .inserted > div, span.diff-add {
-        background-color: var(--highlight-addition);
+        background-color: var(--highlight-addition)
       }
       span.diff-add {
-        background-color: var(--highlight-addition);
-        color: darken(#4e9a06, 50%);
+        background-color: var(--highlight-addition)
+        color: darken(#4e9a06, 50%)
       }
     }
     else if syntaxTheme == "Twilight" {
-      body, .theme-light__forced, body.theme-system {
-        --highlight-bg: #141414 !important;
-        --highlight-color: #f7f7f7;
-        --highlight-comment: #777;
-        --highlight-punctuation: #ddf2a4;
-        --highlight-namespace: #fc0;
-        --highlight-attribute: #d6bb6d;
-        --highlight-literal: #CA7840;
-        --highlight-symbol: #f7f7f7;
-        --highlight-keyword: #f9ee98;
-        --highlight-variable: #7587a6;
-        --highlight-addition: #253B22;
-        --highlight-deletion: #420E09;
+      body, .theme-light__forced, body.theme-system,
+      :root code, :root .full-diff {
+        --highlight-bg: #141414 i
+        --highlight-color: #f7f7f7 i
+        --highlight-comment: #777 i
+        --highlight-punctuation: #ddf2a4 i
+        --highlight-namespace: #fc0 i
+        --highlight-attribute: #d6bb6d i
+        --highlight-literal: #CA7840 i
+        --highlight-symbol: #f7f7f7 i
+        --highlight-keyword: #f9ee98 i
+        --highlight-variable: #7587a6 i
+        --highlight-addition: #253B22 i
+        --highlight-deletion: #420E09 i
       }
       .s-prose :not(.s-code-block) > code,
       pre[class*="lang"] {
-        color: var(--highlight-color);
-        background-color: var(--highlight-bg) !important;
+        color: var(--highlight-color)
+        background-color: var(--highlight-bg) i
       }
       code, .full-diff {
-        background-color: var(--highlight-bg);
+        background-color: var(--highlight-bg)
+      }
+      .comment-text code {
+        color: var(--highlight-color)
       }
       span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
-        background-color: var(--highlight-deletion);
-        color: lighten(#420E09, 60%);
+        background-color: var(--highlight-deletion)
+        color: lighten(#420E09, 60%)
       }
       #revisions .markdown-diff .full-diff .deleted > div {
-        background-color: darken(#420E09, 50%);
+        background-color: darken(#420E09, 50%)
       }
       #revisions .markdown-diff .full-diff .inserted > div {
-        background-color: darken(#253B22, 50%);
+        background-color: darken(#253B22, 50%)
       }
       .full-diff .inserted > div, span.diff-add {
-        background-color: var(--highlight-addition);
+        background-color: var(--highlight-addition)
       }
       span.diff-add {
-        background-color: var(--highlight-addition);
-        color: lighten(#8F9D6A, 20%);
+        background-color: var(--highlight-addition)
+        color: lighten(#8F9D6A, 20%)
       }
     }
     else if syntaxTheme == "Custom" {
-      body, .theme-light__forced, body.theme-system {
-        --highlight-bg: highlight-bg  !important;
-        --highlight-color: highlight-color;
-        --highlight-comment: highlight-comment;
-        --highlight-punctuation: highlight-punctuation;
-        --highlight-namespace: highlight-namespace;
-        --highlight-attribute: highlight-attribute;
-        --highlight-literal: highlight-literal;
-        --highlight-symbol: highlight-symbol;
-        --highlight-keyword: highlight-keyword;
-        --highlight-variable: highlight-variable;
-        --highlight-addition: highlight-addition;
-        --highlight-deletion: highlight-deletion;
+      body, .theme-light__forced, body.theme-system,
+      body.unified-theme,
+      :root code, :root .full-diff {
+        --highlight-bg: highlight-bg  i
+        --highlight-color: highlight-color i
+        --highlight-comment: highlight-comment i
+        --highlight-punctuation: highlight-punctuation i
+        --highlight-namespace: highlight-namespace i
+        --highlight-attribute: highlight-attribute i
+        --highlight-literal: highlight-literal i
+        --highlight-symbol: highlight-symbol i
+        --highlight-keyword: highlight-keyword i
+        --highlight-variable: highlight-variable i
+        --highlight-addition: highlight-addition i
+        --highlight-deletion: highlight-deletion i
       }
       .s-prose :not(.s-code-block) > code,
       pre[class*="lang"] {
-        color: var(--highlight-color);
-        background-color: var(--highlight-bg) !important;
+        color: var(--highlight-color)
+        background-color: var(--highlight-bg) i
       }
       code, .full-diff {
-        background-color: var(--highlight-bg);
+        background-color: var(--highlight-bg)
+      }
+      .comment-text code {
+        color: var(--highlight-color)
       }
       span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
-        background-color: var(--highlight-deletion);
-        color: lighten(highlight-deletion, 60%);
+        background-color: var(--highlight-deletion)
+        color: lighten(highlight-deletion, 60%)
       }
       #revisions .markdown-diff .full-diff .deleted > div {
-        background-color: darken(highlight-deletion, 50%);
+        background-color: darken(highlight-deletion, 50%)
       }
       #revisions .markdown-diff .full-diff .inserted > div {
-        background-color: darken(highlight-addition, 50%);
+        background-color: darken(highlight-addition, 50%)
       }
       .full-diff .inserted > div, span.diff-add {
-        background-color: var(--highlight-addition);
+        background-color: var(--highlight-addition)
       }
       span.diff-add {
-        background-color: darken(highlight-addition, 30%);
-        color: lighten(highlight-color, 20%);
+        background-color: darken(highlight-addition, 30%)
+        color: lighten(highlight-color, 20%)
       }
     }
   }
