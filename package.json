@@ -16,7 +16,7 @@
     "url": "https://github.com/StylishThemes/Feature-Override-Styles/issues"
   },
   "devDependencies": {
-    "stylelint": "^14.7.0",
+    "stylelint": "^14.8.2",
     "stylelint-config-standard": "^25.0.0",
     "updates": "^13.0.5",
     "versions": "^9.2.3"
