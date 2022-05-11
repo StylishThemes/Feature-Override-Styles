@@ -148,13 +148,15 @@
   .saved-reply-form, .review-comment .is-comment-editing, .ScreenshotCarousel,.markdown-body table code,
   .svg-tip, .code-list .file-box, .session-authentication .flash, .markdown-title code,
   .file:not(.open) .file-header.file-header--expandable, .pricing-dark-container, .hx_kbd,
-  [data-target='command-palette-item.hintText'] {
+  [data-target='command-palette-item.hintText'], [class*="Flash-sc-"], .social-reaction-summary-item,
+  .ActionList-item.ActionList-item--navActive:not(.ActionList-item--danger)::after,
+  .ActionList-item--navActive.ActionList-item, .UnderlineNav-item {
     border-radius: general-border-radius;
   }
   // docs actions guides consistency https://docs.github.com/en/actions/guides
   .border-white[role="button" i], .stale-files-tab { border-radius: button-border-radius }
   select.form-select, tracked-issues-progress [style*="border-radius: 40px" i],
-  button[style*="border-radius:100px" i] {
+  button[style*="border-radius:100px" i], .ActionList-item.org-menu-item {
     border-radius: general-border-radius i;
   }
   code span.circle {
@@ -219,6 +221,9 @@
   }
   .rounded-top-1 {
 	  border-top-left-radius: general-border-radius i;
+  }
+  .rounded-right-1 {
+    border-bottom-right-radius: general-border-radius i;
   }
   /* pull user status down and align else default values */
   if align-user-status {
