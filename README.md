@@ -61,14 +61,14 @@ This style allows you to customize Wikipedia Dark gray text colors.<br><br>
 📦 [Install the Wikipedia Dark IMG Styles usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/wikipedia-dark-img-styles.user.css)<br>
 This styles adds more infobox and other images settings in various wikis supported by our Wikipedia Dark.<br>
 
-### StackOverflow Dark
+### StackOverflow Dark and Stack Sites Wardrobe
 
-These are companion styles for our [StackOverflow Dark](https://github.com/StylishThemes/StackOverflow-Dark) style.
+These are companion styles for our [StackOverflow Dark](https://github.com/StylishThemes/StackOverflow-Dark) style and Style-it Themes [Stack Sites Wardrobe](https://github.com/style-it-themes/stack-sites-wardrobe) styles.
 
 > Note: Some of these styles should not be used without the Wikipedia Dark style also installed ;)
 
 📦 [Install the StackOverflow Syntax Themes usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/stackoverflow-syntax-themes.user.css)<br>
-This style allows you to choose preset syntax themes for StackOverflow and associated sites.<br><br>
+This style allows you to choose preset syntax themes for Stack Overflow/Exchange and associated sites.<br><br>
 
 ## Contributions
 
