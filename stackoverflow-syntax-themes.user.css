@@ -36,7 +36,6 @@ domain("superuser.com"),
 domain("stackapps.com"),
 domain("mathoverflow.net"),
 domain("askubuntu.com") {
-// teststststs ddsd
   :root {
     if syntaxTheme == "Ambiance" {
       body, .theme-light__forced, body.theme-system,
@@ -56,7 +55,7 @@ domain("askubuntu.com") {
       }
       .s-prose :not(.s-code-block) > code,
       pre[class*="lang"] {
-        color: var(--highlight-color)
+        color: var(--highlight-color);
         background-color: var(--highlight-bg) i
       }
       code, .full-diff {
@@ -66,21 +65,28 @@ domain("askubuntu.com") {
         color: var(--highlight-color)
       }
       span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
-        background-color: var(--highlight-deletion)
-        color: lighten(#df382c, 60%)
+        background-color: var(--highlight-deletion);
+        color: lighten(highlight-deletion, 60%)
       }
       #revisions .markdown-diff .full-diff .deleted > div {
-        background-color: darken(#df382c, 50%)
+        background-color: darken(highlight-deletion, 50%)
       }
       #revisions .markdown-diff .full-diff .inserted > div {
-        background-color: darken(#4e9a06, 60%)
+        background-color: darken(highlight-addition, 60%)
       }
-      .full-diff .inserted > div, span.diff-add {
+      .full-diff .inserted > div {
         background-color: var(--highlight-addition)
+      }
+      .full-diff .deleted > div {
+        background-color: var(--highlight-deletion)
       }
       span.diff-add {
-        background-color: var(--highlight-addition)
-        color: darken(#4e9a06, 50%)
+        background-color: var(--highlight-addition);
+        color: darken(highlight-addition, 80%)
+      }
+      span.diff-delete {
+        background-color: var(--highlight-deletion);
+        color: darken(highlight-deletion, 80%)
       }
     }
     else if syntaxTheme == "Twilight" {
@@ -101,7 +107,7 @@ domain("askubuntu.com") {
       }
       .s-prose :not(.s-code-block) > code,
       pre[class*="lang"] {
-        color: var(--highlight-color)
+        color: var(--highlight-color);
         background-color: var(--highlight-bg) i
       }
       code, .full-diff {
@@ -111,21 +117,28 @@ domain("askubuntu.com") {
         color: var(--highlight-color)
       }
       span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
-        background-color: var(--highlight-deletion)
-        color: lighten(#420E09, 60%)
+        background-color: var(--highlight-deletion);
+        color: lighten(highlight-deletion, 60%)
       }
       #revisions .markdown-diff .full-diff .deleted > div {
-        background-color: darken(#420E09, 50%)
+        background-color: darken(highlight-deletion, 50%)
       }
       #revisions .markdown-diff .full-diff .inserted > div {
-        background-color: darken(#253B22, 50%)
+        background-color: darken(highlight-addition, 50%)
       }
-      .full-diff .inserted > div, span.diff-add {
+      .full-diff .inserted > div {
         background-color: var(--highlight-addition)
       }
       span.diff-add {
-        background-color: var(--highlight-addition)
-        color: lighten(#8F9D6A, 20%)
+        background-color: var(--highlight-addition);
+        color: lighten(highlight-addition, 20%)
+      }
+      .full-diff .deleted > div {
+        background-color: var(--highlight-deletion)
+      }
+      span.diff-deleted {
+        background-color: var(--highlight-deletion);
+        color: lighten(highlight-deletion, 20%)
       }
     }
     else if syntaxTheme == "Custom" {
@@ -147,7 +160,7 @@ domain("askubuntu.com") {
       }
       .s-prose :not(.s-code-block) > code,
       pre[class*="lang"] {
-        color: var(--highlight-color)
+        color: var(--highlight-color);
         background-color: var(--highlight-bg) i
       }
       code, .full-diff {
@@ -157,7 +170,7 @@ domain("askubuntu.com") {
         color: var(--highlight-color)
       }
       span.diff-delete, .suggested-edit .deleted, .markdown-diff .deleted {
-        background-color: var(--highlight-deletion)
+        background-color: var(--highlight-deletion);
         color: lighten(highlight-deletion, 60%)
       }
       #revisions .markdown-diff .full-diff .deleted > div {
@@ -166,11 +179,18 @@ domain("askubuntu.com") {
       #revisions .markdown-diff .full-diff .inserted > div {
         background-color: darken(highlight-addition, 50%)
       }
-      .full-diff .inserted > div, span.diff-add {
+      .full-diff .deleted > div {
+        background-color: var(--highlight-deletion)
+      }
+      .full-diff .inserted > div {
         background-color: var(--highlight-addition)
       }
       span.diff-add {
-        background-color: darken(highlight-addition, 30%)
+        background-color: darken(highlight-addition, 55%);
+        color: lighten(highlight-color, 20%)
+      }
+      span.diff-delete {
+        background-color: darken(highlight-deletion, 55%);
         color: lighten(highlight-color, 20%)
       }
     }
