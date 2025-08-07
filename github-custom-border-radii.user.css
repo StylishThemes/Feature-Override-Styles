@@ -30,7 +30,7 @@
     border-radius: 0 general-border-radius general-border-radius 0;
   }
   /* end */
-  .IssueLabel, .Counter {
+  .IssueLabel, .Counter, [class*="TokenBase__StyledTokenBase"] {
     border-radius: general-border-radius;
   }
   .gist-quicksearch-results .gist-quicksearch-result-header:first-child {
