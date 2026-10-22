@@ -1,3 +1,5 @@
+**Retired:** the diff color customizer moved to [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark), the other styles no longer match current markup.
+
 <h1 align="center">Feature Override Styles</h1>
 <p align="center">
   <a href="https://github.com/StylishThemes/Feature-Override-Styles/tags">
